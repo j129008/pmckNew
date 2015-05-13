@@ -151,26 +151,49 @@
               <button onclick="myScroll('ask')" class="center-block btn btn-primary btn-lg btn-circle">開始諮詢</button>
           </div>
       </div>
+      <script>
+        var ans = [];
+        function saveAnsAndFadeOut( Qx, Ans, Show ){
+            $('#'+Qx).fadeOut();
+            $('#'+Show).fadeIn();
+            ans.push(Ans);
+        }
+
+        $(document).ready(
+            function(){
+                $('#Q2').hide();
+            }
+        );
+      </script>
 
       <div class="box1" id="ask">
-      <div style="height:100vh;" class="container-fluid">
-         <form data-toggle="validator" role="form" id="pmckForm" class="form" method="post" >
-         <!--
-         <form data-toggle="validator" role="form" id="pmckForm" class="form" method="post" action="http://pmck.comlu.com/pmck.php">
-         <-->
-             <div class="center-block text-a"id="Q1">
-                 <div style="text-align: center;"><h1>寵物種類</h1></div>
-                 <img class="center-block" src="image/DogCat.jpg">
-                 <div class="box1 center-block">
-                     <button class="btn btn-primary">狗</button>
-                     <button class="btn btn-primary">貓</button>
-                 </div>
-             </div>
-
-
-         </form>
-      </div>
-
+          <div style="height:100vh;" class="container-fluid">
+              <div class="center-block"id="Q1">
+                  <div style="text-align: center;"><h1>寵物種類</h1></div>
+                  <img class="center-block" src="image/DogCat.jpg">
+                  <div class="box1 text-center">
+                      <br>
+                      <button onclick="saveAnsAndFadeOut('Q1','1','Q2')" style="width:250px" class="btn btn-primary">狗</button>
+                      <button onclick="saveAnsAndFadeOut('Q1','2','Q2')" style="width:250px" class="btn btn-primary">貓</button>
+                  </div>
+              </div>
+              <div class="center-block"id="Q2">
+                  <div style="text-align: center;"><h1>疾病種類</h1></div>
+                  <div class="box1 text-center">
+                      <br>
+                      <button onclick="saveAnsAndFadeOut('Q2','1','Q1')" style="width:250px" class="btn btn-primary">皮膚</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','1','Q1')" style="width:250px" class="btn btn-primary">泌尿</button>
+                      <br><br>
+                      <button onclick="saveAnsAndFadeOut('Q2','1','Q1')" style="width:250px" class="btn btn-primary">眼睛</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','2','Q1')" style="width:250px" class="btn btn-primary">腸胃</button>
+                      <br><br>
+                      <button onclick="saveAnsAndFadeOut('Q2','2','Q1')" style="width:250px" class="btn btn-primary">骨科</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','2','Q1')" style="width:250px" class="btn btn-primary">耳科</button>
+                      <br><br>
+                      <button onclick="saveAnsAndFadeOut('Q2','2','Q1')" style="width:250px" class="btn btn-primary">感冒</button>
+                  </div>
+              </div>
+          </div>
       </div>
       <div class="box1">
       <div class="container-fluid">
