@@ -161,7 +161,7 @@
 
         $(document).ready(
             function(){
-                $('#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear').hide();
+                $('#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
             }
         );
       </script>
@@ -196,7 +196,19 @@
               <div class="center-block"id="skin">
                   <div style="text-align: center;"><h1>皮膚</h1></div>
                   <div class="box1 text-center">
-
+                      <h2></h2>
+                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">耳朵、脖子、手肘及腹部等處劇烈搔癢。</button>
+                      <br><br>
+                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">眼眶、嘴角邊、腳趾等處掉毛及搔癢。</button>
+                      <br><br>
+                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">
+                      背部及尾部劇癢，且有時在身上會發現像砂一樣的跳蚤糞便。
+                      </button>
+                      <br><br>
+                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">
+                      常舔腳趾或身上有皮屑及分散性掉毛；短毛犬常見。
+                      </button>
+                      <br><br>
                   </div>
               </div>
               <div class="center-block"id="eye">
@@ -231,6 +243,12 @@
               </div>
               <div class="center-block"id="cold">
                   <div style="text-align: center;"><h1>感冒</h1></div>
+                  <div class="box1 text-center">
+
+                  </div>
+              </div>
+              <div class="center-block"id="userData">
+                  <div style="text-align: center;"><h1>結果</h1></div>
                   <div class="box1 text-center">
 
                   </div>
