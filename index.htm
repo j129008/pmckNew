@@ -152,11 +152,11 @@
           </div>
       </div>
       <script>
-        var ans = [];
         function saveAnsAndFadeOut( Qx, Ans, Show ){
             $('#'+Qx).fadeOut();
             $('#'+Show).fadeIn();
-            ans.push(Ans);
+            $('#ans').append(Ans);
+
         }
 
         $(document).ready(
@@ -250,7 +250,8 @@
               <div class="center-block"id="userData">
                   <div style="text-align: center;"><h1>結果</h1></div>
                   <div class="box1 text-center">
-
+                      <div id="ans">
+                      </div>
                   </div>
               </div>
           </div>
