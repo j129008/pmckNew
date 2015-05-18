@@ -54,9 +54,7 @@
 
         }
         .box{
-            margin: 5px;
             border-style: solid;
-            border-color: red;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -66,9 +64,6 @@
             background-position: center center;
         }
         .box1{
-            margin: 5px;
-            border-style: solid;
-            border-color: green;
         }
         .btn-circle{
             width: 100px;
@@ -152,15 +147,21 @@
           </div>
       </div>
       <script>
+        var ansList = [];
         function saveAnsAndFadeOut( Qx, Ans, Show ){
             $('#'+Qx).fadeOut();
             $('#'+Show).fadeIn();
-            $('#ans').append(Ans);
+            ansList.push(Ans);
         }
 
         $(document).ready(
             function(){
-                $('#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
+                $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
+            }
+        );
+        $(window).load(
+            function(){
+                $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
             }
         );
       </script>
@@ -172,39 +173,61 @@
                   <img class="center-block" src="image/DogCat.jpg">
                   <div class="box1 text-center">
                       <br>
-                      <button onclick="saveAnsAndFadeOut('Q1','1','Q2')" style="width:250px" class="btn btn-primary">狗</button>
-                      <button onclick="saveAnsAndFadeOut('Q1','2','Q2')" style="width:250px" class="btn btn-primary">貓</button>
+                      <button onclick="saveAnsAndFadeOut('Q1','狗','Q1_1')" style="width:250px" class="btn btn-primary">狗</button>
+                      <button onclick="saveAnsAndFadeOut('Q1','貓','Q1_1')" style="width:250px" class="btn btn-primary">貓</button>
+                  </div>
+              </div>
+              <div class="center-block"id="Q1_1">
+                  <div style="text-align: center;"><h1>寵物體重</h1></div>
+                  <img class="center-block" src="image/DogCat.jpg">
+                  <div class="box1 text-center">
+                      <br>
+                      <button onclick="saveAnsAndFadeOut('Q1_1','1~3kg','Q1_2')" style="width:250px" class="btn btn-primary">1~3 kg</button>
+                      <button onclick="saveAnsAndFadeOut('Q1_1','2~5kg','Q1_2')" style="width:250px" class="btn btn-primary">2~5 kg</button>
+                      <button onclick="saveAnsAndFadeOut('Q1_1','7~13kg','Q1_2')" style="width:250px" class="btn btn-primary">7~13 kg</button>
+                      <button onclick="saveAnsAndFadeOut('Q1_1','15~25kg','Q1_2')" style="width:250px" class="btn btn-primary">15~25 kg</button>
+                  </div>
+              </div>
+              <div class="center-block"id="Q1_2">
+                  <div style="text-align: center;"><h1>寵物年齡</h1></div>
+                  <img class="center-block" src="image/DogCat.jpg">
+                  <div class="box1 text-center">
+                      <br>
+                      <button onclick="saveAnsAndFadeOut('Q1_2','~1y','Q2')" style="width:250px" class="btn btn-primary">1年以下</button>
+                      <button onclick="saveAnsAndFadeOut('Q1_2','1~3y','Q2')" style="width:250px" class="btn btn-primary">1~3年</button>
+                      <button onclick="saveAnsAndFadeOut('Q1_2','3~6y','Q2')" style="width:250px" class="btn btn-primary">3~6年</button>
+                      <button onclick="saveAnsAndFadeOut('Q1_2','6y~','Q2')" style="width:250px" class="btn btn-primary">6年以上</button>
                   </div>
               </div>
               <div class="center-block"id="Q2">
                   <div style="text-align: center;"><h1>疾病種類</h1></div>
                   <div class="box1 text-center">
                       <br>
-                      <button onclick="saveAnsAndFadeOut('Q2','1','skin')" style="width:250px" class="btn btn-primary">皮膚</button>
-                      <button onclick="saveAnsAndFadeOut('Q2','1','pee')" style="width:250px" class="btn btn-primary">泌尿</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','皮膚病','skin')" style="width:250px" class="btn btn-primary">皮膚</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','尿道','pee')" style="width:250px" class="btn btn-primary">泌尿</button>
                       <br><br>
-                      <button onclick="saveAnsAndFadeOut('Q2','1','eye')" style="width:250px" class="btn btn-primary">眼睛</button>
-                      <button onclick="saveAnsAndFadeOut('Q2','2','stomach')" style="width:250px" class="btn btn-primary">腸胃</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','眼科','eye')" style="width:250px" class="btn btn-primary">眼睛</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','腸胃','stomach')" style="width:250px" class="btn btn-primary">腸胃</button>
                       <br><br>
-                      <button onclick="saveAnsAndFadeOut('Q2','2','bone')" style="width:250px" class="btn btn-primary">骨科</button>
-                      <button onclick="saveAnsAndFadeOut('Q2','2','ear')" style="width:250px" class="btn btn-primary">耳科</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','骨科','bone')" style="width:250px" class="btn btn-primary">骨科</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','耳科','ear')" style="width:250px" class="btn btn-primary">耳科</button>
                       <br><br>
-                      <button onclick="saveAnsAndFadeOut('Q2','2','cold')" style="width:250px" class="btn btn-primary">感冒</button>
+                      <button onclick="saveAnsAndFadeOut('Q2','感冒','cold')" style="width:250px" class="btn btn-primary">感冒</button>
                   </div>
               </div>
               <div class="center-block"id="skin">
-                  <div style="text-align: center;"><h1>皮膚</h1></div>
+                  <div style="text-align: center;"><h1>皮膚科</h1></div>
                   <div class="box1 text-center">
                       <h2></h2>
-                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">耳朵、脖子、手肘及腹部等處劇烈搔癢。</button>
+                      <button onclick="saveAnsAndFadeOut('skin','疥癬蟲','userData')"class="btn btn-primary">耳朵、脖子、手肘及腹部等處劇烈搔癢。</button>
                       <br><br>
-                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">眼眶、嘴角邊、腳趾等處掉毛及搔癢。</button>
+                      <button onclick="saveAnsAndFadeOut('skin','毛囊蟲','userData')"class="btn btn-primary">眼眶、嘴角邊、腳趾等處掉毛及搔癢。</button>
                       <br><br>
-                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">
+                      <button onclick="saveAnsAndFadeOut('skin','跳蚤過敏症','userData')"class="btn btn-primary">
                       背部及尾部劇癢，且有時在身上會發現像砂一樣的跳蚤糞便。
                       </button>
                       <br><br>
-                      <button onclick="saveAnsAndFadeOut('skin','2','userData')"class="btn btn-primary">
+                      <button onclick="saveAnsAndFadeOut('skin','黴菌','userData')"class="btn btn-primary">
                       常舔腳趾或身上有皮屑及分散性掉毛；短毛犬常見。
                       </button>
                       <br><br>
@@ -246,11 +269,75 @@
 
                   </div>
               </div>
-              <div class="center-block"id="userData">
-                  <div style="text-align: center;"><h1>結果</h1></div>
+              <script>
+function post(params) {
+
+    for(var key in params) {
+        if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+         }
+    }
+
+    form.submit();
+}
+              </script>
+              <div class="center-block" id="userData">
+                  <div style="text-align: center;"><h1>聯絡方式</h1></div>
                   <div class="box1 text-center">
-                      <div id="ans">
-                          <button class="btn btn-primary">Submit</button>
+                      <div id="ans" class="center-block" style="width:300px">
+                          <script>
+var form = document.createElement("form");
+form.setAttribute("method", "POST");
+form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
+form.setAttribute("class", "form-inline");
+form.setAttribute("role", "form");
+
+function addFormInput(formLabel, value){
+    var formGroupDiv = document.createElement("div");
+    formGroupDiv.setAttribute("class","form-group");
+
+    var inputTitle = document.createElement("label");
+    var text = document.createTextNode(formLabel);
+    inputTitle.appendChild(text);
+
+    var visibilityField = document.createElement("input");
+    visibilityField.setAttribute("name", value);
+    visibilityField.setAttribute("type", "text");
+    visibilityField.setAttribute("class", "form-control");
+
+    form.appendChild(formGroupDiv);
+    formGroupDiv.appendChild(inputTitle);
+    formGroupDiv.appendChild(visibilityField);
+    document.getElementById("ans").appendChild(form);
+}
+addFormInput('姓名：', '姓名');
+addFormInput('手機：', '手機');
+addFormInput('信箱：', '信箱');
+addFormInput('住址：', '住址');
+
+var formGroupDiv = document.createElement("div");
+formGroupDiv.setAttribute("class","form-group");
+
+var visibilityField = document.createElement("textarea");
+visibilityField.setAttribute("name", '留言');
+visibilityField.setAttribute("rows", '4');
+visibilityField.setAttribute("class", "form-control");
+
+var inputTitle = document.createElement("label");
+var text = document.createTextNode('留言：');
+inputTitle.appendChild(text);
+
+form.appendChild(formGroupDiv);
+formGroupDiv.appendChild(inputTitle);
+formGroupDiv.appendChild(visibilityField);
+document.getElementById("ans").appendChild(form);
+                          </script>
+                          <button onclick="post({ansList})" class="btn btn-primary">Submit</button>
                       </div>
                   </div>
               </div>
