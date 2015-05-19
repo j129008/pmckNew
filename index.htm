@@ -53,7 +53,6 @@
          body{
          }
          .box{
-         border-style: solid;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -61,6 +60,7 @@
          background-image: url(image/header.jpg);
          background-size: cover;
          background-position: center center;
+         background-attachment: fixed;
          }
          .box1{
          }
@@ -118,12 +118,19 @@
             <div id="navbar" class="collapse navbar-collapse">
                <ul class="nav navbar-nav">
                   <li><a href="javascript: return false" onclick="myScroll('home')">首頁</a></li>
-                  <li><a href="javascript: return false" onclick="myScroll('ask')">線上諮詢</a></li>
-                  <li><a href="javascript: return false" onclick="myScroll('boss')">關於我們</a></li>
-                  <li><a href="intro.htm">理念</a></li>
-                  <li><a href="pmck.htm">寵物藥盒</a></li>
-                  <li><a href="usual_question.htm">常見問題</a></li>
-                  <li><a href="history.htm">諮詢記錄</a></li>
+                  <li><a href="javascript: return false" onclick="myScroll('ask')">線上診斷</a></li>
+                  <li><a href="javascript: return false" onclick="myScroll('boss')">院長介紹</a></li>
+                  <li><a href="javascript: return false" onclick="myScroll('hospital')">關於本院</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">寵物藥盒<span class="caret"></span></a></span>
+                      <ul class="dropdown-menu" role="menu">
+                          <li><a href="intro.htm">理念</a></li>
+                          <li class="divider"></li>
+                          <li><a href="usual_question.htm">常見問題</a></li>
+                          <li class="divider"></li>
+                          <li><a href="history.htm">諮詢記錄</a></li>
+                      </ul>
+                  </li>
                   <li><a href="https://pmcker.wordpress.com/">部落格</a></li>
                </ul>
                <ul class="nav navbar-nav navbar-right hidden-xs">
@@ -139,11 +146,12 @@
       </nav>
       <!--begin-->
       <div id="home" style="height:100vh" class="box">
-         <div class="box1">
-            <h1 style="color: white;">中興動物醫院 疾病諮詢</h1>
+         <div style="text-align: center;" class="box1">
+            <h1 style="color: white; font-size: 600%">中興動物醫院疾病診斷</h1>
+            <h3 style="color: white;">您或許是抱著一顆好奇的心進來看一看 但我們一定會用事實來證明一切 </h3>
             <br>
             <br>
-            <button onclick="myScroll('ask')" class="center-block btn btn-primary btn-lg btn-circle">開始諮詢</button>
+            <button onclick="myScroll('ask')" class="center-block btn btn-primary btn-lg btn-circle">診 斷</button>
          </div>
       </div>
       <script>
@@ -370,13 +378,7 @@
                <ul>
                   <br>
                   <font size="4">
-                     <li>國立中興大學獸醫學士</li>
-                     <br>
-                     <li>新化畜試所養兔中心研究</li>
-                     <br>
-                     <li>基隆海軍醫院復健科服役</li>
-                     <br>
-                     <li>台北市中心動物醫院實習</li>
+                     <li>基隆市中興動物醫院院長 </li>
                      <br>
                      <li>美國佛大小動物臨床結業</li>
                      <br>
@@ -386,7 +388,14 @@
                      <br>
                      <li>基市第六屆獸醫公會理事長</li>
                      <br>
-                     <li>基隆市中興動物醫院院長 </li>
+                     <li>國立中興大學獸醫學士</li>
+                     <br>
+                     <li>新化畜試所養兔中心研究</li>
+                     <br>
+                     <li>基隆海軍醫院復健科服役</li>
+                     <br>
+                     <li>台北市中心動物醫院實習</li>
+                     <br>
                   </font>
                </ul>
             </div>
@@ -396,10 +405,11 @@
             </div>
          </div>
       </div>
-      <div style="height:100vh;">
+      <div id="hospital" style="height:100vh;">
+          <br>
          <div class="container-fluid">
             <div class="col-md-3 col-md-offset-1">
-               <h1>聯絡本院</h1>
+                <h1>關於本院</h1>
                <br>
                <ul>
                   <font size="4">
