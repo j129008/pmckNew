@@ -118,12 +118,12 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                <ul class="nav navbar-nav">
-                  <li class="active"><a href="">首頁</a></li>
+                  <li><a href="javascript: return false" onclick="myScroll('home')">首頁</a></li>
+                  <li><a href="javascript: return false" onclick="myScroll('ask')">線上諮詢</a></li>
+                  <li><a href="javascript: return false" onclick="myScroll('boss')">關於我們</a></li>
                   <li><a href="intro.htm">理念</a></li>
-                  <li><a href="about.htm">關於我們</a></li>
                   <li><a href="pmck.htm">寵物藥盒</a></li>
                   <li><a href="usual_question.htm">常見問題</a></li>
-                  <li><a href="ask.htm">線上諮詢</a></li>
                   <li><a href="history.htm">諮詢記錄</a></li>
                   <li><a href="https://pmcker.wordpress.com/">部落格</a></li>
                </ul>
@@ -138,7 +138,7 @@
       </nav>
 
       <!--begin-->
-      <div style="height:100vh" class="box">
+      <div id="home" style="height:100vh" class="box">
           <div class="box1">
               <h1 style="color: white;">中興動物醫院 疾病諮詢</h1>
               <br>
@@ -343,7 +343,7 @@ document.getElementById("ans").appendChild(form);
               </div>
           </div>
       </div>
-      <div class="box1">
+      <div id="boss" class="box1">
       <div class="container-fluid">
          <div class="col-md-3 col-md-offset-1">
             <!-- portfolio -->
