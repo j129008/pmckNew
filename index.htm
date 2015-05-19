@@ -25,55 +25,54 @@
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+         
          ga('create', 'UA-61390412-1', 'auto');
          ga('send', 'pageview');
       </script>
       <!-- google logo tag -->
       <script type="application/ld+json">
-          {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "url": "http://www.pmck.com.tw",
-            "logo": "http://pmck.com.tw/pmckTW/image/PMCK_logo.jpg",
-            "contactPoint":[
-               {  "@type": "ContactPoint",
-                  "telephone": "+886-800-400900",
-                  "contactType" : "customer service",
-                  "contactOption" : "TollFree",
-                  "areaServed" : "TW"
-               }
-            ],
-            "sameAs" : [ "https://www.facebook.com/pages/%E4%B8%AD%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/750082825054315",
-                         "https://plus.google.com/103254230399327131793/about?hl=zh-TW"
-            ]
-          }
+         {
+           "@context": "http://schema.org",
+           "@type": "Organization",
+           "url": "http://www.pmck.com.tw",
+           "logo": "http://pmck.com.tw/pmckTW/image/PMCK_logo.jpg",
+           "contactPoint":[
+              {  "@type": "ContactPoint",
+                 "telephone": "+886-800-400900",
+                 "contactType" : "customer service",
+                 "contactOption" : "TollFree",
+                 "areaServed" : "TW"
+              }
+           ],
+           "sameAs" : [ "https://www.facebook.com/pages/%E4%B8%AD%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/750082825054315",
+                        "https://plus.google.com/103254230399327131793/about?hl=zh-TW"
+           ]
+         }
       </script>
       <style>
-        body{
-
-        }
-        .box{
-            border-style: solid;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            background-image: url(image/header.jpg);
-            background-size: cover;
-            background-position: center center;
-        }
-        .box1{
-        }
-        .btn-circle{
-            width: 100px;
-            height: 100px;
-            text-align: center;
-            padding: 6px 0;
-            font-size: 20px;
-            line-height: 1.42;
-            border-radius: 200px;
-        }
+         body{
+         }
+         .box{
+         border-style: solid;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         overflow: hidden;
+         background-image: url(image/header.jpg);
+         background-size: cover;
+         background-position: center center;
+         }
+         .box1{
+         }
+         .btn-circle{
+         width: 100px;
+         height: 100px;
+         text-align: center;
+         padding: 6px 0;
+         font-size: 20px;
+         line-height: 1.42;
+         border-radius: 200px;
+         }
       </style>
    </HEAD>
    <BODY class="pmckFont">
@@ -86,7 +85,7 @@
             version    : 'v2.3'
             });
          };
-
+         
          (function(d, s, id){
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) {return;}
@@ -96,12 +95,12 @@
           }(document, 'script', 'facebook-jssdk'));
       </script>
       <script>
-        function myScroll(id){
-            $('html,body').animate(
-                    {scrollTop: $("#"+id).offset().top-50},
-                   'slow'
-                    )
-        }
+         function myScroll(id){
+             $('html,body').animate(
+                     {scrollTop: $("#"+id).offset().top-50},
+                    'slow'
+                     )
+         }
       </script>
       <nav class="navbar navbar-inverse navbar-fixed-top">
          <div class="container">
@@ -113,7 +112,7 @@
                <span class="icon-bar"></span>
                </button>
                <a class="navbar-brand">
-                  <img src="image/PMCK_logo.jpg" class="img-responsive" alt="Logo">
+               <img src="image/PMCK_logo.jpg" class="img-responsive" alt="Logo">
                </a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
@@ -130,289 +129,307 @@
                <ul class="nav navbar-nav navbar-right hidden-xs">
                   <div style="height:14px;">
                   </div>
-                     <font color="gray">您是第<SCRIPT src="http://www.dreamhome.com.tw/escounter/counter.asp?name=pmck&dir=5"></SCRIPT>位來賓</font>
+                  <font color="gray">
+                     您是第<SCRIPT src="http://www.dreamhome.com.tw/escounter/counter.asp?name=pmck&dir=5"></SCRIPT>位來賓
+                  </font>
                </ul>
             </div>
             <!--/.nav-collapse -->
          </div>
       </nav>
-
       <!--begin-->
       <div id="home" style="height:100vh" class="box">
-          <div class="box1">
-              <h1 style="color: white;">中興動物醫院 疾病諮詢</h1>
-              <br>
-              <br>
-              <button onclick="myScroll('ask')" class="center-block btn btn-primary btn-lg btn-circle">開始諮詢</button>
-          </div>
+         <div class="box1">
+            <h1 style="color: white;">中興動物醫院 疾病諮詢</h1>
+            <br>
+            <br>
+            <button onclick="myScroll('ask')" class="center-block btn btn-primary btn-lg btn-circle">開始諮詢</button>
+         </div>
       </div>
       <script>
-        var ansList = [];
-        function saveAnsAndFadeOut( Qx, Ans, Show ){
-            $('#'+Qx).fadeOut();
-            $('#'+Show).fadeIn();
-            ansList.push(Ans);
-        }
-
-        $(document).ready(
-            function(){
-                $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
-            }
-        );
-        $(window).load(
-            function(){
-                $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
-            }
-        );
-      </script>
-
-      <div class="box1" id="ask">
-          <div style="height:100vh;" class="container-fluid">
-              <div class="center-block"id="Q1">
-                  <div style="text-align: center;"><h1>寵物種類</h1></div>
-                  <img class="center-block" src="image/DogCat.jpg">
-                  <div class="box1 text-center">
-                      <br>
-                      <button onclick="saveAnsAndFadeOut('Q1','狗','Q1_1')" style="width:250px" class="btn btn-primary">狗</button>
-                      <button onclick="saveAnsAndFadeOut('Q1','貓','Q1_1')" style="width:250px" class="btn btn-primary">貓</button>
-                  </div>
-              </div>
-              <div class="center-block"id="Q1_1">
-                  <div style="text-align: center;"><h1>寵物體重</h1></div>
-                  <img class="center-block" src="image/DogCat.jpg">
-                  <div class="box1 text-center">
-                      <br>
-                      <button onclick="saveAnsAndFadeOut('Q1_1','1~3kg','Q1_2')" style="width:250px" class="btn btn-primary">1~3 kg</button>
-                      <button onclick="saveAnsAndFadeOut('Q1_1','2~5kg','Q1_2')" style="width:250px" class="btn btn-primary">2~5 kg</button>
-                      <button onclick="saveAnsAndFadeOut('Q1_1','7~13kg','Q1_2')" style="width:250px" class="btn btn-primary">7~13 kg</button>
-                      <button onclick="saveAnsAndFadeOut('Q1_1','15~25kg','Q1_2')" style="width:250px" class="btn btn-primary">15~25 kg</button>
-                  </div>
-              </div>
-              <div class="center-block"id="Q1_2">
-                  <div style="text-align: center;"><h1>寵物年齡</h1></div>
-                  <img class="center-block" src="image/DogCat.jpg">
-                  <div class="box1 text-center">
-                      <br>
-                      <button onclick="saveAnsAndFadeOut('Q1_2','~1y','Q2')" style="width:250px" class="btn btn-primary">1年以下</button>
-                      <button onclick="saveAnsAndFadeOut('Q1_2','1~3y','Q2')" style="width:250px" class="btn btn-primary">1~3年</button>
-                      <button onclick="saveAnsAndFadeOut('Q1_2','3~6y','Q2')" style="width:250px" class="btn btn-primary">3~6年</button>
-                      <button onclick="saveAnsAndFadeOut('Q1_2','6y~','Q2')" style="width:250px" class="btn btn-primary">6年以上</button>
-                  </div>
-              </div>
-              <div class="center-block"id="Q2">
-                  <div style="text-align: center;"><h1>疾病種類</h1></div>
-                  <div class="box1 text-center">
-                      <br>
-                      <button onclick="saveAnsAndFadeOut('Q2','皮膚病','skin')" style="width:250px" class="btn btn-primary">皮膚</button>
-                      <button onclick="saveAnsAndFadeOut('Q2','尿道','pee')" style="width:250px" class="btn btn-primary">泌尿</button>
-                      <br><br>
-                      <button onclick="saveAnsAndFadeOut('Q2','眼科','eye')" style="width:250px" class="btn btn-primary">眼睛</button>
-                      <button onclick="saveAnsAndFadeOut('Q2','腸胃','stomach')" style="width:250px" class="btn btn-primary">腸胃</button>
-                      <br><br>
-                      <button onclick="saveAnsAndFadeOut('Q2','骨科','bone')" style="width:250px" class="btn btn-primary">骨科</button>
-                      <button onclick="saveAnsAndFadeOut('Q2','耳科','ear')" style="width:250px" class="btn btn-primary">耳科</button>
-                      <br><br>
-                      <button onclick="saveAnsAndFadeOut('Q2','感冒','cold')" style="width:250px" class="btn btn-primary">感冒</button>
-                  </div>
-              </div>
-              <div class="center-block"id="skin">
-                  <div style="text-align: center;"><h1>皮膚科</h1></div>
-                  <div class="box1 text-center">
-                      <h2></h2>
-                      <button onclick="saveAnsAndFadeOut('skin','疥癬蟲','userData')"class="btn btn-primary">耳朵、脖子、手肘及腹部等處劇烈搔癢。</button>
-                      <br><br>
-                      <button onclick="saveAnsAndFadeOut('skin','毛囊蟲','userData')"class="btn btn-primary">眼眶、嘴角邊、腳趾等處掉毛及搔癢。</button>
-                      <br><br>
-                      <button onclick="saveAnsAndFadeOut('skin','跳蚤過敏症','userData')"class="btn btn-primary">
-                      背部及尾部劇癢，且有時在身上會發現像砂一樣的跳蚤糞便。
-                      </button>
-                      <br><br>
-                      <button onclick="saveAnsAndFadeOut('skin','黴菌','userData')"class="btn btn-primary">
-                      常舔腳趾或身上有皮屑及分散性掉毛；短毛犬常見。
-                      </button>
-                      <br><br>
-                  </div>
-              </div>
-              <div class="center-block"id="eye">
-                  <div style="text-align: center;"><h1>眼科</h1></div>
-                  <div class="box1 text-center">
-
-                  </div>
-              </div>
-              <div class="center-block"id="pee">
-                  <div style="text-align: center;"><h1>泌尿</h1></div>
-                  <div class="box1 text-center">
-
-                  </div>
-              </div>
-              <div class="center-block"id="stomach">
-                  <div style="text-align: center;"><h1>腸胃</h1></div>
-                  <div class="box1 text-center">
-
-                  </div>
-              </div>
-              <div class="center-block"id="bone">
-                  <div style="text-align: center;"><h1>骨科</h1></div>
-                  <div class="box1 text-center">
-
-                  </div>
-              </div>
-              <div class="center-block"id="ear">
-                  <div style="text-align: center;"><h1>耳科</h1></div>
-                  <div class="box1 text-center">
-
-                  </div>
-              </div>
-              <div class="center-block"id="cold">
-                  <div style="text-align: center;"><h1>感冒</h1></div>
-                  <div class="box1 text-center">
-
-                  </div>
-              </div>
-              <script>
-function post(params) {
-
-    for(var key in params) {
-        if(params.hasOwnProperty(key)) {
-            var hiddenField = document.createElement("input");
-            hiddenField.setAttribute("type", "hidden");
-            hiddenField.setAttribute("name", key);
-            hiddenField.setAttribute("value", params[key]);
-
-            form.appendChild(hiddenField);
+         var ansList = [];
+         function saveAnsAndFadeOut( Qx, Ans, Show ){
+             $('#'+Qx).fadeOut();
+             $('#'+Show).fadeIn();
+             ansList.push(Ans);
          }
-    }
-
-    form.submit();
-}
-              </script>
-              <div class="center-block" id="userData">
-                  <div style="text-align: center;"><h1>聯絡方式</h1></div>
-                  <div class="box1 text-center">
-                      <div id="ans" class="center-block" style="width:300px">
-                          <script>
-var form = document.createElement("form");
-form.setAttribute("method", "POST");
-form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
-form.setAttribute("class", "form-inline");
-form.setAttribute("role", "form");
-
-function addFormInput(formLabel, value){
-    var formGroupDiv = document.createElement("div");
-    formGroupDiv.setAttribute("class","form-group");
-
-    var inputTitle = document.createElement("label");
-    var text = document.createTextNode(formLabel);
-    inputTitle.appendChild(text);
-
-    var visibilityField = document.createElement("input");
-    visibilityField.setAttribute("name", value);
-    visibilityField.setAttribute("type", "text");
-    visibilityField.setAttribute("class", "form-control");
-
-    form.appendChild(formGroupDiv);
-    formGroupDiv.appendChild(inputTitle);
-    formGroupDiv.appendChild(visibilityField);
-    document.getElementById("ans").appendChild(form);
-}
-addFormInput('姓名：', '姓名');
-addFormInput('手機：', '手機');
-addFormInput('信箱：', '信箱');
-addFormInput('住址：', '住址');
-
-var formGroupDiv = document.createElement("div");
-formGroupDiv.setAttribute("class","form-group");
-
-var visibilityField = document.createElement("textarea");
-visibilityField.setAttribute("name", '留言');
-visibilityField.setAttribute("rows", '4');
-visibilityField.setAttribute("class", "form-control");
-
-var inputTitle = document.createElement("label");
-var text = document.createTextNode('留言：');
-inputTitle.appendChild(text);
-
-form.appendChild(formGroupDiv);
-formGroupDiv.appendChild(inputTitle);
-formGroupDiv.appendChild(visibilityField);
-document.getElementById("ans").appendChild(form);
-                          </script>
-                          <button onclick="post({ansList})" class="btn btn-primary">Submit</button>
-                      </div>
+         
+         $(document).ready(
+             function(){
+                 $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
+             }
+         );
+         $(window).load(
+             function(){
+                 $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#stomach,#ear,#userData').hide();
+             }
+         );
+      </script>
+      <div class="box1" id="ask">
+         <div style="height:100vh;" class="container-fluid">
+            <div class="center-block"id="Q1">
+               <div style="text-align: center;">
+                  <h1>寵物種類</h1>
+               </div>
+               <img class="center-block" src="image/DogCat.jpg">
+               <div class="box1 text-center">
+                  <br>
+                  <button onclick="saveAnsAndFadeOut('Q1','狗','Q1_1')" style="width:250px" class="btn btn-primary">狗</button>
+                  <button onclick="saveAnsAndFadeOut('Q1','貓','Q1_1')" style="width:250px" class="btn btn-primary">貓</button>
+               </div>
+            </div>
+            <div class="center-block"id="Q1_1">
+               <div style="text-align: center;">
+                  <h1>寵物體重</h1>
+               </div>
+               <img class="center-block" src="image/DogCat.jpg">
+               <div class="box1 text-center">
+                  <br>
+                  <button onclick="saveAnsAndFadeOut('Q1_1','1~3kg','Q1_2')" style="width:250px" class="btn btn-primary">1~3 kg</button>
+                  <button onclick="saveAnsAndFadeOut('Q1_1','2~5kg','Q1_2')" style="width:250px" class="btn btn-primary">2~5 kg</button>
+                  <button onclick="saveAnsAndFadeOut('Q1_1','7~13kg','Q1_2')" style="width:250px" class="btn btn-primary">7~13 kg</button>
+                  <button onclick="saveAnsAndFadeOut('Q1_1','15~25kg','Q1_2')" style="width:250px" class="btn btn-primary">15~25 kg</button>
+               </div>
+            </div>
+            <div class="center-block"id="Q1_2">
+               <div style="text-align: center;">
+                  <h1>寵物年齡</h1>
+               </div>
+               <img class="center-block" src="image/DogCat.jpg">
+               <div class="box1 text-center">
+                  <br>
+                  <button onclick="saveAnsAndFadeOut('Q1_2','~1y','Q2')" style="width:250px" class="btn btn-primary">1年以下</button>
+                  <button onclick="saveAnsAndFadeOut('Q1_2','1~3y','Q2')" style="width:250px" class="btn btn-primary">1~3年</button>
+                  <button onclick="saveAnsAndFadeOut('Q1_2','3~6y','Q2')" style="width:250px" class="btn btn-primary">3~6年</button>
+                  <button onclick="saveAnsAndFadeOut('Q1_2','6y~','Q2')" style="width:250px" class="btn btn-primary">6年以上</button>
+               </div>
+            </div>
+            <div class="center-block"id="Q2">
+               <div style="text-align: center;">
+                  <h1>疾病種類</h1>
+               </div>
+               <div class="box1 text-center">
+                  <br>
+                  <button onclick="saveAnsAndFadeOut('Q2','皮膚病','skin')" style="width:250px" class="btn btn-primary">皮膚</button>
+                  <button onclick="saveAnsAndFadeOut('Q2','尿道','pee')" style="width:250px" class="btn btn-primary">泌尿</button>
+                  <br><br>
+                  <button onclick="saveAnsAndFadeOut('Q2','眼科','eye')" style="width:250px" class="btn btn-primary">眼睛</button>
+                  <button onclick="saveAnsAndFadeOut('Q2','腸胃','stomach')" style="width:250px" class="btn btn-primary">腸胃</button>
+                  <br><br>
+                  <button onclick="saveAnsAndFadeOut('Q2','骨科','bone')" style="width:250px" class="btn btn-primary">骨科</button>
+                  <button onclick="saveAnsAndFadeOut('Q2','耳科','ear')" style="width:250px" class="btn btn-primary">耳科</button>
+                  <br><br>
+                  <button onclick="saveAnsAndFadeOut('Q2','感冒','cold')" style="width:250px" class="btn btn-primary">感冒</button>
+               </div>
+            </div>
+            <div class="center-block"id="skin">
+               <div style="text-align: center;">
+                  <h1>皮膚科</h1>
+               </div>
+               <div class="box1 text-center">
+                  <h2></h2>
+                  <button onclick="saveAnsAndFadeOut('skin','疥癬蟲','userData')"class="btn btn-primary">耳朵、脖子、手肘及腹部等處劇烈搔癢。</button>
+                  <br><br>
+                  <button onclick="saveAnsAndFadeOut('skin','毛囊蟲','userData')"class="btn btn-primary">眼眶、嘴角邊、腳趾等處掉毛及搔癢。</button>
+                  <br><br>
+                  <button onclick="saveAnsAndFadeOut('skin','跳蚤過敏症','userData')"class="btn btn-primary">
+                  背部及尾部劇癢，且有時在身上會發現像砂一樣的跳蚤糞便。
+                  </button>
+                  <br><br>
+                  <button onclick="saveAnsAndFadeOut('skin','黴菌','userData')"class="btn btn-primary">
+                  常舔腳趾或身上有皮屑及分散性掉毛；短毛犬常見。
+                  </button>
+                  <br><br>
+               </div>
+            </div>
+            <div class="center-block"id="eye">
+               <div style="text-align: center;">
+                  <h1>眼科</h1>
+               </div>
+               <div class="box1 text-center">
+               </div>
+            </div>
+            <div class="center-block"id="pee">
+               <div style="text-align: center;">
+                  <h1>泌尿</h1>
+               </div>
+               <div class="box1 text-center">
+               </div>
+            </div>
+            <div class="center-block"id="stomach">
+               <div style="text-align: center;">
+                  <h1>腸胃</h1>
+               </div>
+               <div class="box1 text-center">
+               </div>
+            </div>
+            <div class="center-block"id="bone">
+               <div style="text-align: center;">
+                  <h1>骨科</h1>
+               </div>
+               <div class="box1 text-center">
+               </div>
+            </div>
+            <div class="center-block"id="ear">
+               <div style="text-align: center;">
+                  <h1>耳科</h1>
+               </div>
+               <div class="box1 text-center">
+               </div>
+            </div>
+            <div class="center-block"id="cold">
+               <div style="text-align: center;">
+                  <h1>感冒</h1>
+               </div>
+               <div class="box1 text-center">
+               </div>
+            </div>
+            <script>
+               function post(params) {
+               
+                   for(var key in params) {
+                       if(params.hasOwnProperty(key)) {
+                           var hiddenField = document.createElement("input");
+                           hiddenField.setAttribute("type", "hidden");
+                           hiddenField.setAttribute("name", key);
+                           hiddenField.setAttribute("value", params[key]);
+               
+                           form.appendChild(hiddenField);
+                        }
+                   }
+               
+                   form.submit();
+               }
+                             
+            </script>
+            <div class="center-block" id="userData">
+               <div style="text-align: center;">
+                  <h1>聯絡方式</h1>
+               </div>
+               <div class="box1 text-center">
+                  <div id="ans" class="center-block" style="width:300px">
+                     <script>
+                        var form = document.createElement("form");
+                        form.setAttribute("method", "POST");
+                        form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
+                        form.setAttribute("class", "form-inline");
+                        form.setAttribute("role", "form");
+                        
+                        function addFormInput(formLabel, value){
+                            var formGroupDiv = document.createElement("div");
+                            formGroupDiv.setAttribute("class","form-group");
+                        
+                            var inputTitle = document.createElement("label");
+                            var text = document.createTextNode(formLabel);
+                            inputTitle.appendChild(text);
+                        
+                            var visibilityField = document.createElement("input");
+                            visibilityField.setAttribute("name", value);
+                            visibilityField.setAttribute("type", "text");
+                            visibilityField.setAttribute("class", "form-control");
+                        
+                            form.appendChild(formGroupDiv);
+                            formGroupDiv.appendChild(inputTitle);
+                            formGroupDiv.appendChild(visibilityField);
+                            document.getElementById("ans").appendChild(form);
+                        }
+                        addFormInput('姓名：', '姓名');
+                        addFormInput('手機：', '手機');
+                        addFormInput('信箱：', '信箱');
+                        addFormInput('住址：', '住址');
+                        
+                        var formGroupDiv = document.createElement("div");
+                        formGroupDiv.setAttribute("class","form-group");
+                        
+                        var visibilityField = document.createElement("textarea");
+                        visibilityField.setAttribute("name", '留言');
+                        visibilityField.setAttribute("rows", '4');
+                        visibilityField.setAttribute("class", "form-control");
+                        
+                        var inputTitle = document.createElement("label");
+                        var text = document.createTextNode('留言：');
+                        inputTitle.appendChild(text);
+                        
+                        form.appendChild(formGroupDiv);
+                        formGroupDiv.appendChild(inputTitle);
+                        formGroupDiv.appendChild(visibilityField);
+                        document.getElementById("ans").appendChild(form);
+                                                  
+                     </script>
+                     <button onclick="post({ansList})" class="btn btn-primary">Submit</button>
                   </div>
-              </div>
-          </div>
+               </div>
+            </div>
+         </div>
       </div>
       <div id="boss" class="box1">
-      <div class="container-fluid">
-         <div class="col-md-3 col-md-offset-1">
-            <!-- portfolio -->
-            <h1>院長 張豪炯 <small>D.V.M.</small></h1>
-            <ul>
-               <br>
-               <font size="4">
-                  <li>國立中興大學獸醫學士</li>
+         <div class="container-fluid">
+            <div class="col-md-3 col-md-offset-1">
+               <!-- portfolio -->
+               <h1>院長 張豪炯 <small>D.V.M.</small></h1>
+               <ul>
                   <br>
-                  <li>新化畜試所養兔中心研究</li>
-                  <br>
-                  <li>基隆海軍醫院復健科服役</li>
-                  <br>
-                  <li>台北市中心動物醫院實習</li>
-                  <br>
-                  <li>美國佛大小動物臨床結業</li>
-                  <br>
-                  <li>基市第三屆獸醫公會理事長</li>
-                  <br>
-                  <li>基市第五屆獸醫公會理事長</li>
-                  <br>
-                  <li>基市第六屆獸醫公會理事長</li>
-                  <br>
-                  <li>基隆市中興動物醫院院長 </li>
-               </font>
-            </ul>
-         </div>
-         <br>
-         <div class="col-md-5">
-            <img width="580" src="image/boss.png"></img>
-         </div>
-      </div>
-      <hr class="divider">
-      <div class="container-fluid">
-         <div class="col-md-3 col-md-offset-1">
-            <h1>聯絡本院</h1>
+                  <font size="4">
+                     <li>國立中興大學獸醫學士</li>
+                     <br>
+                     <li>新化畜試所養兔中心研究</li>
+                     <br>
+                     <li>基隆海軍醫院復健科服役</li>
+                     <br>
+                     <li>台北市中心動物醫院實習</li>
+                     <br>
+                     <li>美國佛大小動物臨床結業</li>
+                     <br>
+                     <li>基市第三屆獸醫公會理事長</li>
+                     <br>
+                     <li>基市第五屆獸醫公會理事長</li>
+                     <br>
+                     <li>基市第六屆獸醫公會理事長</li>
+                     <br>
+                     <li>基隆市中興動物醫院院長 </li>
+                  </font>
+               </ul>
+            </div>
             <br>
-            <ul>
-               <font size="4">
-                  <li>院址: 基隆市仁愛區仁二路138號</li>
-                  <br>
-                  <li>免費諮詢: <a href="tel:+886800400900">0800-400-900</a></li>
-                  <br>
-                  <li>諮詢專線:  <a href="tel:+8860224262900">(02)2426-2900</a></li>
-                  <br>
-                  <li>傳真電話:  (02)2424-2845</li>
-                  <br>
-                  <li>Email: <a href="mailto:pmcker@gmail.com">pmcker@gmail.com</a></li>
-                  <br>
-                  <li>營業時間: 
-                  <br>一般 9:00 ~ 21:30
-                  <br>週日 9:00 ~ 16:30 </li>
-               </font>
-            </ul>
-         </div>
-         <div class="col-md-4">
-            <!-- map -->
-            <div class="hidden-xs">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.223489727034!2d121.74616900000001!3d25.128134000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4e3ef4c2e375%3A0xfee6eb0a4d2607cb!2z5Lit6IiI5YuV54mp6Yar6Zmi!5e0!3m2!1szh-TW!2shk!4v1427787400270" width="580" height="450" frameborder="0" style="border:0"></iframe>
+            <div class="col-md-5">
+               <img width="580" src="image/boss.png"></img>
             </div>
-            <div class="visible-xs">
-               <iframe style="max-width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.223489727034!2d121.74616900000001!3d25.128134000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4e3ef4c2e375%3A0xfee6eb0a4d2607cb!2z5Lit6IiI5YuV54mp6Yar6Zmi!5e0!3m2!1szh-TW!2shk!4v1427787400270" height="450" frameborder="0" style="border:0"></iframe>
+         </div>
+         <hr class="divider">
+         <div class="container-fluid">
+            <div class="col-md-3 col-md-offset-1">
+               <h1>聯絡本院</h1>
+               <br>
+               <ul>
+                  <font size="4">
+                     <li>院址: 基隆市仁愛區仁二路138號</li>
+                     <br>
+                     <li>免費諮詢: <a href="tel:+886800400900">0800-400-900</a></li>
+                     <br>
+                     <li>諮詢專線:  <a href="tel:+8860224262900">(02)2426-2900</a></li>
+                     <br>
+                     <li>傳真電話:  (02)2424-2845</li>
+                     <br>
+                     <li>Email: <a href="mailto:pmcker@gmail.com">pmcker@gmail.com</a></li>
+                     <br>
+                     <li>營業時間: 
+                        <br>一般 9:00 ~ 21:30
+                        <br>週日 9:00 ~ 16:30 
+                     </li>
+                  </font>
+               </ul>
+            </div>
+            <div class="col-md-4">
+               <!-- map -->
+               <div class="hidden-xs">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.223489727034!2d121.74616900000001!3d25.128134000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4e3ef4c2e375%3A0xfee6eb0a4d2607cb!2z5Lit6IiI5YuV54mp6Yar6Zmi!5e0!3m2!1szh-TW!2shk!4v1427787400270" width="580" height="450" frameborder="0" style="border:0"></iframe>
+               </div>
+               <div class="visible-xs">
+                  <iframe style="max-width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.223489727034!2d121.74616900000001!3d25.128134000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4e3ef4c2e375%3A0xfee6eb0a4d2607cb!2z5Lit6IiI5YuV54mp6Yar6Zmi!5e0!3m2!1szh-TW!2shk!4v1427787400270" height="450" frameborder="0" style="border:0"></iframe>
+               </div>
             </div>
          </div>
       </div>
-
-      </div>
-
-
       <footer class="footer">
          <div class="container">
             <p class="text-muted">寵物藥盒 疾病諮詢網　版權所有　&copy; 2008 Pet's Medical Pack All Rights Reserved.</p>
