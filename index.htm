@@ -78,31 +78,88 @@
    <BODY class="pmckFont">
       <!-- fb sdk for js -->
       <script>
-         window.fbAsyncInit = function() {
-            FB.init({
-            appId      : '439749989534358',
-            xfbml      : true,
-            version    : 'v2.3'
-            });
-         };
-         
-/*
-         (function(d, s, id){
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) {return;}
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=439749989534358&version=v2.3";
-          fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-          */
-      </script>
-      <script>
-         function myScroll(id){
-             $('html,body').animate(
-                     {scrollTop: $("#"+id).offset().top-50},
-                    'slow'
-                     )
-         }
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : '439749989534358',
+        xfbml      : true,
+        version    : 'v2.3'
+    });
+};
+
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=439749989534358&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+function myScroll(id){
+    $('html,body').animate(
+            {scrollTop: $("#"+id).offset().top-50},
+            'slow'
+            )
+}
+
+var ansList = [];
+function saveAnsAndFadeOut( Qx, Ans, Show ){
+     $('#'+Qx).fadeOut();
+     $('#'+Show).fadeIn();
+     ansList.push(Ans);
+ }
+ 
+ $(document).ready(
+     function(){
+         $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+     }
+ );
+ $(window).load(
+     function(){
+         $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+     }
+ );
+
+function post(params) {
+
+    for(var key in params) {
+        if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+        }
+    }
+
+    form.submit();
+}
+
+var form = document.createElement("form");
+form.setAttribute("method", "POST");
+form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
+form.setAttribute("class", "form-inline");
+form.setAttribute("role", "form");
+
+function addFormInput(formLabel, value){
+    var formGroupDiv = document.createElement("div");
+    formGroupDiv.setAttribute("class","form-group");
+
+    var inputTitle = document.createElement("label");
+    var text = document.createTextNode(formLabel);
+    inputTitle.appendChild(text);
+
+    var visibilityField = document.createElement("input");
+    visibilityField.setAttribute("name", value);
+    visibilityField.setAttribute("type", "text");
+    visibilityField.setAttribute("class", "form-control");
+
+    form.appendChild(formGroupDiv);
+    formGroupDiv.appendChild(inputTitle);
+    formGroupDiv.appendChild(visibilityField);
+    document.getElementById("ans").appendChild(form);
+}
+                                                  
       </script>
       <nav class="navbar navbar-inverse navbar-fixed-top">
          <div class="container">
@@ -156,25 +213,6 @@
             <button onclick="myScroll('ask')" class="center-block btn btn-primary btn-lg btn-circle">診 斷</button>
          </div>
       </div>
-      <script>
-         var ansList = [];
-         function saveAnsAndFadeOut( Qx, Ans, Show ){
-             $('#'+Qx).fadeOut();
-             $('#'+Show).fadeIn();
-             ansList.push(Ans);
-         }
-         
-         $(document).ready(
-             function(){
-                 $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
-             }
-         );
-         $(window).load(
-             function(){
-                 $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
-             }
-         );
-      </script>
       <div class="box1" id="ask">
          <div style="height:100vh;" class="container-fluid">
             <div class="center-block"id="Q1">
@@ -254,45 +292,45 @@ block img{
                 </style>
                 <div class="main">
                    <block>
-                       <article>皮膚病</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','皮膚病','skin')" class="img-rounded hoverZoomLink" src="image/betaImg/skin.jpg">
+                       <article>皮膚科</article>
+                       <img onclick="saveAnsAndFadeOut('Q2','皮膚科','skin')" class="img-rounded hoverZoomLink" src="image/betaImg/skin.jpg">
                        <p>抓癢、大量掉毛、皮膚異味</p> 
                    </block>
                    <block>
                        <article>泌尿科</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','泌尿','pee')" class="img-rounded hoverZoomLink" src="image/betaImg/pee.jpg">
+                       <img onclick="saveAnsAndFadeOut('Q2','泌尿','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/pee.jpg">
                        <p>血尿、排尿困難</p> 
                    </block>
                    <block>
                        <article>眼科</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','眼科','eye')" class="img-rounded hoverZoomLink" src="image/betaImg/eye.jpg">
+                       <img onclick="saveAnsAndFadeOut('Q2','眼科','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/eye.jpg">
                        <p>淚腺炎，淚腺異常分泌 </p> 
                    </block>
                    <block>
                        <article>腸道科</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','腸道','belly')" class="img-rounded hoverZoomLink" src="image/betaImg/belly.jpg">
+                       <img onclick="saveAnsAndFadeOut('Q2','腸道','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/belly.jpg">
                        <p>下痢、血便、消瘦 </p> 
                    </block>
                </div>
                <div class="main">
                    <block>
                        <article>骨科</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','骨科','bone')" class="img-rounded hoverZoomLink" src="image/betaImg/bone.jpg">
+                       <img onclick="saveAnsAndFadeOut('Q2','骨科','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/bone.jpg">
                        <p>骨裂、扭傷、外傷</p> 
                    </block>
                    <block>
                        <article>耳科</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','耳科','ear')" class="img-rounded hoverZoomLink" src="image/betaImg/ear.jpg">
+                       <img onclick="saveAnsAndFadeOut('Q2','耳科','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/ear.jpg">
                        <p>甩耳、耳道異常分泌物 </p> 
                    </block>
                    <block>
                        <article>呼吸科</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','感冒','cold')" class="img-rounded hoverZoomLink" src="image/betaImg/breath.jpg">
+                       <img onclick="saveAnsAndFadeOut('Q2','感冒','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/breath.jpg">
                        <p>咳嗽、氣喘</p> 
                    </block>
                    <block>
                        <article>心臟科</article>
-                       <img onclick="saveAnsAndFadeOut('Q2','心絲蟲','heart')" class="img-rounded hoverZoomLink" src="image/betaImg/heart.jpg">
+                       <img onclick="saveAnsAndFadeOut('Q2','心絲蟲','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/heart.jpg">
                        <p>心絲蟲，易喘、腹水 </p> 
                    </block>
                </div>
@@ -301,7 +339,7 @@ block img{
                <div style="text-align: center;">
                   <h1>皮膚科</h1>
                </div>
-               <div class="box1 text-center">
+               <div class="text-center">
                   <h2></h2>
                   <button onclick="saveAnsAndFadeOut('skin','疥癬蟲','userData')"class="btn btn-primary">耳朵、脖子、手肘及腹部等處劇烈搔癢。</button>
                   <br><br>
@@ -317,120 +355,36 @@ block img{
                   <br><br>
                </div>
             </div>
-            <div class="center-block"id="eye">
-               <div style="text-align: center;">
-                  <h1>眼科</h1>
-               </div>
-               <div class="box1 text-center">
-               </div>
-            </div>
-            <div class="center-block"id="pee">
-               <div style="text-align: center;">
-                  <h1>泌尿</h1>
-               </div>
-               <div class="box1 text-center">
-               </div>
-            </div>
-            <div class="center-block" id="belly">
-               <div style="text-align: center;">
-                  <h1>腸胃</h1>
-               </div>
-               <div class="box1 text-center">
-               </div>
-            </div>
-            <div class="center-block"id="bone">
-               <div style="text-align: center;">
-                  <h1>骨科</h1>
-               </div>
-               <div class="box1 text-center">
-               </div>
-            </div>
-            <div class="center-block"id="ear">
-               <div style="text-align: center;">
-                  <h1>耳科</h1>
-               </div>
-               <div class="box1 text-center">
-               </div>
-            </div>
-            <div class="center-block"id="cold">
-               <div style="text-align: center;">
-                  <h1>感冒</h1>
-               </div>
-               <div class="box1 text-center">
-               </div>
-            </div>
-            <script>
-               function post(params) {
-               
-                   for(var key in params) {
-                       if(params.hasOwnProperty(key)) {
-                           var hiddenField = document.createElement("input");
-                           hiddenField.setAttribute("type", "hidden");
-                           hiddenField.setAttribute("name", key);
-                           hiddenField.setAttribute("value", params[key]);
-               
-                           form.appendChild(hiddenField);
-                        }
-                   }
-               
-                   form.submit();
-               }
-                             
-            </script>
             <div class="center-block" id="userData">
                <div style="text-align: center;">
                   <h1>聯絡方式</h1>
                </div>
-               <div class="box1 text-center">
+               <div class="text-center">
                   <div id="ans" class="center-block" style="width:300px">
-                     <script>
-                        var form = document.createElement("form");
-                        form.setAttribute("method", "POST");
-                        form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
-                        form.setAttribute("class", "form-inline");
-                        form.setAttribute("role", "form");
-                        
-                        function addFormInput(formLabel, value){
-                            var formGroupDiv = document.createElement("div");
-                            formGroupDiv.setAttribute("class","form-group");
-                        
-                            var inputTitle = document.createElement("label");
-                            var text = document.createTextNode(formLabel);
-                            inputTitle.appendChild(text);
-                        
-                            var visibilityField = document.createElement("input");
-                            visibilityField.setAttribute("name", value);
-                            visibilityField.setAttribute("type", "text");
-                            visibilityField.setAttribute("class", "form-control");
-                        
-                            form.appendChild(formGroupDiv);
-                            formGroupDiv.appendChild(inputTitle);
-                            formGroupDiv.appendChild(visibilityField);
-                            document.getElementById("ans").appendChild(form);
-                        }
-                        addFormInput('姓名：', '姓名');
-                        addFormInput('手機：', '手機');
-                        addFormInput('信箱：', '信箱');
-                        addFormInput('住址：', '住址');
-                        
-                        var formGroupDiv = document.createElement("div");
-                        formGroupDiv.setAttribute("class","form-group");
-                        
-                        var visibilityField = document.createElement("textarea");
-                        visibilityField.setAttribute("name", '留言');
-                        visibilityField.setAttribute("rows", '4');
-                        visibilityField.setAttribute("class", "form-control");
-                        
-                        var inputTitle = document.createElement("label");
-                        var text = document.createTextNode('留言：');
-                        inputTitle.appendChild(text);
-                        
-                        form.appendChild(formGroupDiv);
-                        formGroupDiv.appendChild(inputTitle);
-                        formGroupDiv.appendChild(visibilityField);
-                        document.getElementById("ans").appendChild(form);
-                                                  
-                     </script>
+                      <script>
+addFormInput('姓名：', '姓名');
+addFormInput('手機：', '手機');
+addFormInput('信箱：', '信箱');
+addFormInput('住址：', '住址');
+
+var formGroupDiv = document.createElement("div");
+formGroupDiv.setAttribute("class","form-group");
+
+var visibilityField = document.createElement("textarea");
+visibilityField.setAttribute("name", '留言');
+visibilityField.setAttribute("rows", '4');
+visibilityField.setAttribute("class", "form-control");
+
+var inputTitle = document.createElement("label");
+var text = document.createTextNode('留言：');
+inputTitle.appendChild(text);
+
+form.appendChild(formGroupDiv);
+formGroupDiv.appendChild(inputTitle);
+formGroupDiv.appendChild(visibilityField);
+document.getElementById("ans").appendChild(form);
+                      
+                      </script>
                      <button onclick="post({ansList})" class="btn btn-primary">Submit</button>
                   </div>
                </div>
