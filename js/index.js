@@ -71,18 +71,16 @@ form.setAttribute("role", "form");
 function addFormInput(formLabel, value){
     var formGroupDiv = document.createElement("div");
     formGroupDiv.setAttribute("class","form-group");
-
-    var inputTitle = document.createElement("label");
-    var text = document.createTextNode(formLabel);
-    inputTitle.appendChild(text);
+    formGroupDiv.setAttribute("style","height: 50px; width: 400px");
 
     var visibilityField = document.createElement("input");
     visibilityField.setAttribute("name", value);
     visibilityField.setAttribute("type", "text");
     visibilityField.setAttribute("class", "form-control");
+    visibilityField.setAttribute("style", "width: 300px;");
+    visibilityField.setAttribute("placeholder", value);
 
     form.appendChild(formGroupDiv);
-    formGroupDiv.appendChild(inputTitle);
     formGroupDiv.appendChild(visibilityField);
     document.getElementById("ans").appendChild(form);
 }
