@@ -62,7 +62,7 @@ form.setAttribute("class", "form-inline");
 form.setAttribute("role", "form");
 form.setAttribute("data-toggle", "validator");
 
-function addFormInput(formLabel, value){
+function addFormInput(formLabel, value, regex){
     var formGroupDiv = document.createElement("div");
     formGroupDiv.setAttribute("class","form-group");
     formGroupDiv.setAttribute("style","height: 50px; width: 400px");
@@ -73,9 +73,11 @@ function addFormInput(formLabel, value){
     visibilityField.setAttribute("class", "form-control");
     visibilityField.setAttribute("style", "width: 300px;");
     visibilityField.setAttribute("placeholder", value);
+    visibilityField.setAttribute("pattern", regex);
 
     form.appendChild(formGroupDiv);
     formGroupDiv.appendChild(visibilityField);
     document.getElementById("ans").appendChild(form);
 }
+
 
