@@ -37,12 +37,13 @@ function saveAnsAndFadeOut( Qx, Ans, Show ){
 
  $(document).ready(
      function(){
-         $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#Q1,#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
      }
  );
  $(window).load(
      function(){
          $('#Q1_2,#Q1_1,#Q2,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#Q1').show();
      }
  );
 
