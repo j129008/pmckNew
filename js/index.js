@@ -33,6 +33,7 @@ function saveAnsAndFadeOut( Qx, Ans, Show ){
      $('#'+Qx).fadeOut();
      $('#'+Show).fadeIn();
      ansList.push(Ans);
+     post(Qx, Ans);
  }
 
  $(document).ready(
@@ -47,20 +48,12 @@ function saveAnsAndFadeOut( Qx, Ans, Show ){
      }
  );
 
-function post(params) {
-
-    for(var key in params) {
-        if(params.hasOwnProperty(key)) {
-            var hiddenField = document.createElement("input");
-            hiddenField.setAttribute("type", "hidden");
-            hiddenField.setAttribute("name", key);
-            hiddenField.setAttribute("value", params[key]);
-
-            form.appendChild(hiddenField);
-        }
-    }
-
-    form.submit();
+function post( myname, params) {
+   var hiddenField = document.createElement("input");
+   hiddenField.setAttribute("type", "hidden");
+   hiddenField.setAttribute("name", myname);
+   hiddenField.setAttribute("value", params);
+   form.appendChild(hiddenField);
 }
 
 var form = document.createElement("form");
@@ -68,6 +61,7 @@ form.setAttribute("method", "POST");
 form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
 form.setAttribute("class", "form-inline");
 form.setAttribute("role", "form");
+form.setAttribute("data-toggle", "validator");
 
 function addFormInput(formLabel, value){
     var formGroupDiv = document.createElement("div");
@@ -85,3 +79,4 @@ function addFormInput(formLabel, value){
     formGroupDiv.appendChild(visibilityField);
     document.getElementById("ans").appendChild(form);
 }
+

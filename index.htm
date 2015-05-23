@@ -218,8 +218,14 @@
                                 addFormInput('信箱：', '信箱');
                                 addFormInput('住址：', '住址');
                                 addFormInput('留言：', '留言');
+                                $("input").attr("required","");
+                                var btn = document.createElement("button");
+                                btn.setAttribute("class", "btn btn-primary");
+                                var t = document.createTextNode("與我們聯絡");
+                                btn.appendChild(t);
+                                form.appendChild(btn);
+                                document.getElementById("ans").appendChild(form);
                             </script>
-                            <button onclick="post({ansList})" class="btn btn-primary">與我們聯絡</button>
                         </div>
                     </div>
                 </div>
