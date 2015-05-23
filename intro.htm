@@ -28,7 +28,6 @@
            imgBlackJack = new Image();
            imgBlackJack.onload = handleImageLoad;
            imgBlackJack.src = "image/blackJack_L.jpg";
-           
          }
 
          function handleImageLoad(){
@@ -59,15 +58,14 @@
                title.x -= 20;
                stageTitle.update(event);
             }
-         } 
+         }
 
          function blackJackTick(event) {
             if( createjs.Ticker.getTicks() > 120  && ( bmp.x > 0 ) ) {
                bmp.x -= 20;
                stageBlackJack.update(event);
             }
-         } 
-                  
+         }
       </script>
       <script>
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -124,7 +122,7 @@
          <div class="row">
             <div class="col-md-7 col-md-offset-1">
                <font size="6">
-                  寵物健康診療 
+                  寵物健康診療
                   <br>
                   開啟寵物醫療諮詢新的里程碑！
                </font><br>
