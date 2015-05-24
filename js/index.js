@@ -38,12 +38,13 @@ function saveAnsAndFadeOut( Qx, Ans, Show ){
 
  $(document).ready(
      function(){
-         $('#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
      }
  );
  $(window).load(
      function(){
-         $('#kind').show();
+         $('#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $(".loader").fadeOut("slow");
      }
  );
 
