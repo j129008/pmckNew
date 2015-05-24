@@ -34,6 +34,7 @@ function saveAnsAndFadeOut( Qx, Ans, Show ){
      $('#'+Show).fadeIn();
      ansList.push(Ans);
      post(Qx, Ans);
+     myScroll('ask');
  }
 
  $(document).ready(
