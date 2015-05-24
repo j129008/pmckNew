@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>http://www.pmck.com.tw/</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+    <url>
+
+      <loc>http://pmck.com.tw/pmckTW/index.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://pmck.com.tw/pmckCN/index.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckTW/index.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckTW/intro.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckCN/intro.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckCN/about.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://pmck.com.tw/pmckTW/pmck.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckCN/pmck.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckTW/usual_question.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckCN/usual_question.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckTW/ask.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckTW/history.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckCN/history.htm</loc>
+
+      <lastmod>2015-04-27</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://pmck.com.tw/pmckCN/regCard.htm</loc>
+
+      <lastmod>2015-04-29</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+</urlset>
