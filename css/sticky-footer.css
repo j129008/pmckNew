@@ -18,6 +18,10 @@ body {
   /* Set the fixed height of the footer here */
 }
 
+.footer .container p{
+     text-align: center;
+}
+
 
 /* Custom page CSS
 -------------------------------------------------- */
