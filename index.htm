@@ -242,12 +242,15 @@
                 </div>
                 <div class="center-block" id="userData">
                     <div style="text-align: center; margin-bottom: 30px">
-                        <article>簡易診斷</article>
+                        <article>病症 / 聯絡資訊</article>
                     </div>
                     <div class="text-center">
                         <div id="ans" class="center-block" style="width:400px">
                             <script>
                                 addFormInput('病症：', '病症','.+');
+                                addFormInput('時間多久：', '時間多久','.+');
+                            </script>
+                            <script>
                                 addFormInput('姓名：', '姓名','[^A-Za-z0-9]+');
                                 addFormInput('手機：', '手機','(^09[0-9]{8}|^09[0-9]{2}-[0-9]{6})');
                                 addFormInput('信箱：', '信箱','.+@.+');
@@ -291,7 +294,7 @@
                         </font>
                     </ul>
                 </div>
-                <img  style="margin-top: 50px; width: 80vw; max-width: 570px; display: inline-block; vertical-align: top;" src="image/boss.jpg"></img>
+                <img class="hidden-xs"  style="margin-top: 50px; width: 80vw; max-width: 570px; display: inline-block; vertical-align: top;" src="image/boss.jpg"></img>
             </div>
             <div id="hospital" style="min-height: 600px; padding-top: 30px; margin: 0px auto; max-width: 1000px">
                 <div id="hospitalLink" style="position: relative; top: -50px;"></div>
@@ -323,7 +326,7 @@
                         </font>
                     </ul>
                 </div>
-                <div style="width: 570px; display: inline-block; vertical-align: top;">
+                <div class="hidden-xs" style="width: 570px; display: inline-block; vertical-align: top;">
                     <iframe style="max-width: 570px; width: 80vw;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.223489727034!2d121.74616900000001!3d25.128134000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d4e3ef4c2e375%3A0xfee6eb0a4d2607cb!2z5Lit6IiI5YuV54mp6Yar6Zmi!5e0!3m2!1szh-TW!2shk!4v1427787400270" height="530" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
