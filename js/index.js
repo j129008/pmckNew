@@ -60,20 +60,19 @@ function post( myname, params) {
 var form = document.createElement("form");
 form.setAttribute("method", "POST");
 form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
-form.setAttribute("class", "form-inline");
+form.setAttribute("class", "form");
 form.setAttribute("role", "form");
 form.setAttribute("data-toggle", "validator");
 
 function addFormInput(formLabel, value, regex){
     var formGroupDiv = document.createElement("div");
     formGroupDiv.setAttribute("class","form-group");
-    formGroupDiv.setAttribute("style","height: 50px; width: 400px");
+    formGroupDiv.setAttribute("style","height: 50px;");
 
     var visibilityField = document.createElement("input");
     visibilityField.setAttribute("name", value);
     visibilityField.setAttribute("type", "text");
     visibilityField.setAttribute("class", "form-control");
-    visibilityField.setAttribute("style", "width: 300px;");
     visibilityField.setAttribute("placeholder", value);
     visibilityField.setAttribute("pattern", regex);
 
