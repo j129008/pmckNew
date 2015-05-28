@@ -39,12 +39,12 @@ function saveAnsAndFadeOut( Qx, Ans, Show ){
 
  $(document).ready(
      function(){
-         $('#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#diseaseTime,#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
      }
  );
  $(window).load(
      function(){
-         $('#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#diseaseTime,#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
          $(".loader").fadeOut("slow");
      }
  );
