@@ -196,7 +196,7 @@
                         </block>
                         <block>
                             <article>腸胃科</article>
-                            <img onclick="saveAnsAndFadeOut('disease','腸道','diseaseTime')" class="img-rounded hoverZoomLink" src="image/betaImg/belly.jpg">
+                            <img onclick="saveAnsAndFadeOut('disease','腸道','belly')" class="img-rounded hoverZoomLink" src="image/betaImg/belly.jpg">
                             <p>下痢、血便、嘔吐 </p>
                         </block>
                         <block>
@@ -221,23 +221,84 @@
                         </block>
                     </div>
                 </div>
-                <div class="center-block"id="skin">
+                <div class="center-block" id="belly">
                     <div style="text-align: center;">
-                        <article>皮膚科</article>
+                        <article>腸胃科</article>
                     </div>
                     <div class="text-center" style="padding-top: 20px">
-                        <button onclick="saveAnsAndFadeOut('skin','疥癬蟲','diseaseTime')"class="btn btn-primary">耳朵、脖子、手肘及腹部等處劇烈搔癢。</button>
+                        <myBtn>
+                        <button onclick="saveAnsAndFadeOut('belly','腹瀉','diarrhea')"class="btn btn-primary">
+                            腹瀉
+                        </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('skin','毛囊蟲','diseaseTime')"class="btn btn-primary">眼眶、嘴角邊、腳趾等處掉毛及搔癢。</button>
+                        <button onclick="saveAnsAndFadeOut('belly','嘔吐','vomit')"class="btn btn-primary">
+                            嘔吐
+                        </button>
+                        <br><br>
+                        </myBtn>
+                    </div>
+                </div>
+                <div class="center-block" id="diarrhea">
+                    <div style="text-align: center;">
+                        <article>腹瀉</article>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px">
+                        <myBtn>
+                        <button onclick="saveAnsAndFadeOut('diarrhea','血便','diseaseTime')"class="btn btn-primary">
+                            血便
+                        </button>
+                        <br><br>
+                        <button onclick="saveAnsAndFadeOut('diarrhea','下痢','diseaseTime')"class="btn btn-primary">
+                            下痢
+                        </button>
+                        <br><br>
+                        </myBtn>
+                    </div>
+                </div>
+                <div class="center-block" id="vomit">
+                    <div style="text-align: center;">
+                        <article>嘔吐顏色</article>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px">
+                        <myBtn>
+                        <button onclick="saveAnsAndFadeOut('vomit','黃色嘔吐','diseaseTime')"class="btn btn-primary">
+                            黃色
+                        </button>
+                        <br><br>
+                        <button onclick="saveAnsAndFadeOut('vomit','紅色嘔吐','diseaseTime')"class="btn btn-primary">
+                            紅色
+                        </button>
+                        <br><br>
+                        <button onclick="saveAnsAndFadeOut('vomit','白色嘔吐','diseaseTime')"class="btn btn-primary">
+                            白色
+                        </button>
+                        <br><br>
+                        </myBtn>
+                    </div>
+                </div>
+                <div class="center-block" id="skin">
+                    <div style="text-align: center;">
+                        <article>發病區塊</article>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px">
+                        <myBtn>
+                        <button onclick="saveAnsAndFadeOut('skin','疥癬蟲','diseaseTime')"class="btn btn-primary">
+                            耳朵/脖子/手肘
+                        </button>
+                        <br><br>
+                        <button onclick="saveAnsAndFadeOut('skin','毛囊蟲','diseaseTime')"class="btn btn-primary">
+                            眼眶/嘴角邊
+                        </button>
                         <br><br>
                         <button onclick="saveAnsAndFadeOut('skin','跳蚤過敏症','diseaseTime')"class="btn btn-primary">
-                        背部及尾部劇癢，且有時在身上會發現像砂一樣的跳蚤糞便。
+                            背部/尾部
                         </button>
                         <br><br>
                         <button onclick="saveAnsAndFadeOut('skin','黴菌','diseaseTime')"class="btn btn-primary">
-                        常舔腳趾或身上有皮屑及分散性掉毛；短毛犬常見。
+                            腳趾/分散性掉毛
                         </button>
                         <br><br>
+                        </myBtn>
                     </div>
                 </div>
                 <div class="center-block" id="diseaseTime">

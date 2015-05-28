@@ -76,3 +76,7 @@ article{
     box-sizing: border-box;
     text-align: center;
 }
+
+myBtn button{
+     width: 250px;
+}
