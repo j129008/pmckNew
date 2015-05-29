@@ -200,8 +200,8 @@
                             <p>下痢、血便、嘔吐 </p>
                         </block>
                         <block>
-                            <article>骨科</article>
-                            <img onclick="saveAnsAndFadeOut('disease','骨科','diseaseTime')" class="img-rounded hoverZoomLink" src="image/betaImg/bone.jpg">
+                            <article>骨科/外科</article>
+                            <img onclick="saveAnsAndFadeOut('disease','骨科','bone')" class="img-rounded hoverZoomLink" src="image/betaImg/bone.jpg">
                             <p>骨裂、扭傷、外傷</p>
                         </block>
                         <block>
@@ -219,6 +219,27 @@
                             <img onclick="saveAnsAndFadeOut('disease','心絲蟲','diseaseTime')" class="img-rounded hoverZoomLink" src="image/betaImg/heart.jpg">
                             <p>心絲蟲，易喘、腹水 </p>
                         </block>
+                    </div>
+                </div>
+                <div class="center-block" id="bone">
+                    <div style="text-align: center;">
+                        <article>骨科/外科症狀</article>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px">
+                        <myBtn>
+                        <button onclick="saveAnsAndFadeOut('bone','扭傷','diseaseTime')"class="btn btn-primary">
+                            扭傷
+                        </button>
+                        <br><br>
+                        <button onclick="saveAnsAndFadeOut('bone','骨折','diseaseTime')"class="btn btn-primary">
+                            骨折
+                        </button>
+                        <br><br>
+                        <button onclick="saveAnsAndFadeOut('bone','外傷','diseaseTime')"class="btn btn-primary">
+                            外傷
+                        </button>
+                        <br><br>
+                        </myBtn>
                     </div>
                 </div>
                 <div class="center-block" id="ear">
@@ -311,8 +332,16 @@
                             紅色
                         </button>
                         <br><br>
+                        <button onclick="saveAnsAndFadeOut('vomit','咖啡色嘔吐','diseaseTime')"class="btn btn-primary">
+                            咖啡色
+                        </button>
+                        <br><br>
                         <button onclick="saveAnsAndFadeOut('vomit','白色嘔吐','diseaseTime')"class="btn btn-primary">
                             白色
+                        </button>
+                        <br><br>
+                        <button onclick="saveAnsAndFadeOut('vomit','食物顏色嘔吐','diseaseTime')"class="btn btn-primary">
+                            食物顏色
                         </button>
                         <br><br>
                         </myBtn>
