@@ -336,14 +336,17 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAnsAndFadeOut('diarrhea','血便','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('血便')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             血便
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('diarrhea','下痢','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('下痢')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             下痢
                         </button>
                         <br><br>
+                        <button onclick="nextQuestion('diarrhea','diseaseTime')"class="btn btn-success">
+                            下一步
+                        </button>
                         </myBtn>
                     </div>
                 </div>
