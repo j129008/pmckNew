@@ -235,18 +235,21 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAnsAndFadeOut('breath','咳嗽','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('咳嗽')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             咳嗽
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('breath','鼻水','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('鼻水')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             鼻水
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('breath','氣喘','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('氣喘')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             氣喘
                         </button>
                         <br><br>
+                        <button onclick="nextQuestion('breath','diseaseTime')"class="btn btn-success">
+                            下一步
+                        </button>
                         </myBtn>
                     </div>
                 </div>
