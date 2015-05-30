@@ -256,18 +256,21 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAnsAndFadeOut('bone','扭傷','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('扭傷')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             扭傷
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('bone','骨折','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('骨折')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             骨折
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('bone','外傷','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('外傷')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             外傷
                         </button>
                         <br><br>
+                        <button onclick="nextQuestion('bone','diseaseTime')"class="btn btn-success">
+                            下一步
+                        </button>
                         </myBtn>
                     </div>
                 </div>
