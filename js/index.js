@@ -24,10 +24,30 @@ var ansList = [];
 function saveAnsAndFadeOut( Qx, Ans, Show ){
      $('#'+Qx).fadeOut();
      $('#'+Show).fadeIn();
-     ansList.push(Ans);
      post(Qx, Ans);
      myScroll('ask');
- }
+}
+
+function saveAns( Ans ){
+     ansList.push(Ans);
+     if(ansList[Ans] == null){
+         ansList[Ans] = true;
+     }else{
+         ansList[Ans] = null;
+     }
+}
+
+function nextQuestion( Qx, Show ){
+     $('#'+Qx).fadeOut();
+     $('#'+Show).fadeIn();
+     myScroll('ask');
+     for(var key in ansList){
+         if(ansList[key] == true){
+             post(key, ansList[key]);
+         }
+     }
+}
+
 
  $(document).ready(
      function(){
