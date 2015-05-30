@@ -298,18 +298,17 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAnsAndFadeOut('pee','血尿','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('血尿')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             血尿
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('pee','排尿困難','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAns('排尿困難')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             排尿困難
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('pee','血尿跟排尿困難','diseaseTime')"class="btn btn-primary">
-                            兩者都有
+                        <button onclick="nextQuestion('pee','diseaseTime')"class="btn btn-success">
+                            下一步
                         </button>
-                        <br><br>
                         </myBtn>
                     </div>
                 </div>

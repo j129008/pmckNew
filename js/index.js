@@ -31,7 +31,7 @@ function saveAnsAndFadeOut( Qx, Ans, Show ){
 function saveAns( Ans ){
      ansList.push(Ans);
      if(ansList[Ans] == null){
-         ansList[Ans] = true;
+         ansList[Ans] = 'YES';
      }else{
          ansList[Ans] = null;
      }
