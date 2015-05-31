@@ -47,6 +47,11 @@ function nextQuestion( Qx, Show ){
          }
      }
 }
+function justNext( Qx, Show ){
+     $('#'+Qx).fadeOut();
+     $('#'+Show).fadeIn();
+     myScroll('ask');
+}
 
 
  $(document).ready(
