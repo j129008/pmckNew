@@ -56,14 +56,14 @@ function justNext( Qx, Show ){
 
  $(document).ready(
      function(){
-         $('#start,#breath,#bone,#ear,#pee,#vomit,#belly,#diarrhea,#diseaseTime,#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#breath,#bone,#ear,#pee,#vomit,#belly,#diarrhea,#diseaseTime,#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#start').button('loading');
      }
  );
  $(window).load(
      function(){
-         $('#start,#breath,#bone,#ear,#pee,#vomit,#belly,#diarrhea,#diseaseTime,#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
-         $(".loader").fadeOut("slow");
-         $("#start").fadeIn("slow");
+         $('#breath,#bone,#ear,#pee,#vomit,#belly,#diarrhea,#diseaseTime,#kind,#age,#weight,#disease,#eye,#cold,#skin,#pee,#bone,#belly,#ear,#userData').hide();
+         $('#start').button('reset');
      }
  );
 
