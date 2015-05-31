@@ -123,7 +123,6 @@
         <div id="ask" style="padding-top: 30px; min-height: 700px;">
             <div id="askLink" style="position: relative; top: -50px;"></div>
             <div style="min-height: 600px;" class="container-fluid">
-                <div class="loader"></div>
                 <div class="center-block" id="steps">
                     <article>診斷流程</article>
                     <div style="display: table; margin-left: auto; margin-right: auto;">
@@ -143,10 +142,11 @@
                             <h4 style="text-align: center; margin-top: 20px">減少外出舟車勞頓時間</h4>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <br>
-                        <button onclick="justNext('steps','kind')" style="width:250px" class="btn btn-primary">立即開始</button>
-                    </div>
+                    <div style="width: 100px; height: 100px;" class="loader center-block"></div>
+                        <div class="text-center">
+                            <br>
+                            <button id="start" onclick="justNext('steps','kind')" style="width:250px" class="btn btn-primary">立即開始</button>
+                        </div>
                 </div>
                 <div class="center-block"id="kind">
                     <div style="text-align: center;">
