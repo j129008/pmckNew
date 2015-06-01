@@ -198,7 +198,7 @@
                         </block>
                         <block>
                             <article>眼科</article>
-                            <img onclick="saveAnsAndFadeOut('disease','眼科','diseaseTime')" class="img-rounded hoverZoomLink" src="image/betaImg/eye.jpg">
+                            <img onclick="saveAnsAndFadeOut('disease','淚腺炎','diseaseTime'); saveAns('淚腺炎')" class="img-rounded hoverZoomLink" src="image/betaImg/eye.jpg">
                             <p>淚腺異常分泌 </p>
                         </block>
                         <block>
@@ -420,19 +420,19 @@
                         <article>生病時間</article>
                     </div>
                     <div class="text-center" style="padding-top: 20px">
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1週內','userData')"class="btn btn-primary">
+                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1週內','userData');printPostSave('postPtr')"class="btn btn-primary">
                             1週內
                         </button>
                         <br><br>
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1~2週','userData')"class="btn btn-primary">
+                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1~2週','userData');printPostSave('postPtr')"class="btn btn-primary">
                             1~2週
                         </button>
                         <br><br>
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','2~3週','userData')"class="btn btn-primary">
+                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','2~3週','userData');printPostSave('postPtr')"class="btn btn-primary">
                             2~3週
                         </button>
                         <br><br>
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1月以上','userData')"class="btn btn-primary">
+                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1月以上','userData'); printPostSave('postPtr')" class="btn btn-primary">
                             1個月以上
                         </button>
                     </div>
@@ -440,6 +440,7 @@
                 <div class="center-block" id="userData">
                     <div style="text-align: center; margin-bottom: 30px">
                         <article>聯絡資訊</article>
+                        <h4 id="postPtr"></h4>
                         <h4>讓我們進一步瞭解病情, 為您做更詳細的解說！
                         </h4>
                         <div class="fb-like" data-href="https://www.facebook.com/pages/%E4%B8%AD%E8%88%88%E5%8B%95%E7%89%A9%E9%86%AB%E9%99%A2/750082825054315" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>

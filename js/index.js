@@ -67,12 +67,21 @@ function justNext( Qx, Show ){
      }
  );
 
+var postSave = [];
 function post( myname, params) {
    var hiddenField = document.createElement("input");
    hiddenField.setAttribute("type", "hidden");
    hiddenField.setAttribute("name", myname);
    hiddenField.setAttribute("value", params);
    form.appendChild(hiddenField);
+   postSave.push(myname);
+   postSave[myname] = params;
+}
+
+function printPostSave( id ){
+    if(ansList[0] != undefined){
+        $('#'+id).append('您的'+postSave['kind']+'具有'+ansList[0]+'等問題');
+    }
 }
 
 var form = document.createElement("form");
