@@ -8,6 +8,6 @@ pmckImp
 {
    font-family: Helvetica,Heiti TC,Segoe UI,Meiryo,微軟正黑體;
 }
-.panel:hover{
-    opacity: 0.6;
+.panel .panel-heading:hover{
+    background-color: #BED7E4;
 }
