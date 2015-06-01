@@ -125,7 +125,20 @@
             <div style="min-height: 600px;" class="container-fluid">
                 <div class="center-block" id="steps">
                     <article>診斷流程</article>
-                    <div style="display: table; margin-left: auto; margin-right: auto;">
+                    <style>
+@media all and (max-width: 1000px){
+    #stepIntro{
+        width: 300px;
+    }
+    #boss{
+         width: 350px;
+    }
+    #hospital{
+        width: 350px;
+    }
+}
+                    </style>
+                    <div id="stepIntro" style="display: table; margin-left: auto; margin-right: auto;">
                         <div style="padding-left: 0px; padding-right: 0px; display: inline-block; margin: 30px; vertical-align: top">
                             <img style="border: 0px none;" src="image/step2.png">
                             <h3 style="text-align: center">上傳疾病症狀</h3>
