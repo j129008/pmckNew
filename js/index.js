@@ -46,6 +46,10 @@ function justNext( Qx, Show ){
      myScroll('ask');
 }
 
+function fadeOutID( ID ){
+    $('#'+ID).fadeOut();
+}
+
 
  $(document).ready(
      function(){
