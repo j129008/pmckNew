@@ -199,7 +199,7 @@
                         </block>
                         <block>
                             <article>眼科</article>
-                            <img onclick="saveAnsAndFadeOut('disease','淚腺炎','diseaseTime'); saveAns('淚腺炎')" class="img-rounded hoverZoomLink" src="image/betaImg/eye.jpg">
+                            <img onclick="saveAnsAndFadeOut('disease','淚腺炎','userData'); saveAns('淚腺炎')" class="img-rounded hoverZoomLink" src="image/betaImg/eye.jpg">
                             <p>淚腺異常分泌 </p>
                         </block>
                         <block>
@@ -224,7 +224,7 @@
                         </block>
                         <block>
                             <article>心臟科</article>
-                            <img onclick="saveAnsAndFadeOut('disease','心絲蟲','diseaseTime')" class="img-rounded hoverZoomLink" src="image/betaImg/heart.jpg">
+                            <img onclick="saveAnsAndFadeOut('disease','心絲蟲','userData')" class="img-rounded hoverZoomLink" src="image/betaImg/heart.jpg">
                             <p>心絲蟲，易喘、腹水 </p>
                         </block>
                     </div>
@@ -247,7 +247,7 @@
                             氣喘
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('breath','diseaseTime')"class="btn btn-success">
+                        <button onclick="nextQuestion('breath','userData')"class="btn btn-success">
                             下一步
                         </button>
                         </myBtn>
@@ -271,7 +271,7 @@
                             外傷
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('bone','diseaseTime')"class="btn btn-success">
+                        <button onclick="nextQuestion('bone','userData')"class="btn btn-success">
                             下一步
                         </button>
                         </myBtn>
@@ -295,7 +295,7 @@
                             抓耳朵
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('ear','diseaseTime')"class="btn btn-success">
+                        <button onclick="nextQuestion('ear','userData')"class="btn btn-success">
                             下一步
                         </button>
                         </myBtn>
@@ -315,7 +315,7 @@
                             排尿困難
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('pee','diseaseTime')"class="btn btn-success">
+                        <button onclick="nextQuestion('pee','userData')"class="btn btn-success">
                             下一步
                         </button>
                         </myBtn>
@@ -352,7 +352,7 @@
                             下痢
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('diarrhea','diseaseTime')"class="btn btn-success">
+                        <button onclick="nextQuestion('diarrhea','userData')"class="btn btn-success">
                             下一步
                         </button>
                         </myBtn>
@@ -364,23 +364,23 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAnsAndFadeOut('vomit','黃色嘔吐','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAnsAndFadeOut('vomit','黃色嘔吐','userData')"class="btn btn-primary">
                             黃色
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','紅色嘔吐','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAnsAndFadeOut('vomit','紅色嘔吐','userData')"class="btn btn-primary">
                             紅色
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','咖啡色嘔吐','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAnsAndFadeOut('vomit','咖啡色嘔吐','userData')"class="btn btn-primary">
                             咖啡色
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','白色嘔吐','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAnsAndFadeOut('vomit','白色嘔吐','userData')"class="btn btn-primary">
                             白色
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','食物顏色嘔吐','diseaseTime')"class="btn btn-primary">
+                        <button onclick="saveAnsAndFadeOut('vomit','食物顏色嘔吐','userData')"class="btn btn-primary">
                             食物顏色
                         </button>
                         <br><br>
@@ -409,33 +409,11 @@
                             腳趾/分散性掉毛
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('skin','diseaseTime')"class="btn btn-success">
+                        <button onclick="nextQuestion('skin','userData')"class="btn btn-success">
                             下一步
                         </button>
                         <br><br>
                         </myBtn>
-                    </div>
-                </div>
-                <div class="center-block" id="diseaseTime">
-                    <div style="text-align: center;">
-                        <article>生病時間</article>
-                    </div>
-                    <div class="text-center" style="padding-top: 20px">
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1週內','userData');printPostSave('postPtr')"class="btn btn-primary">
-                            1週內
-                        </button>
-                        <br><br>
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1~2週','userData');printPostSave('postPtr')"class="btn btn-primary">
-                            1~2週
-                        </button>
-                        <br><br>
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','2~3週','userData');printPostSave('postPtr')"class="btn btn-primary">
-                            2~3週
-                        </button>
-                        <br><br>
-                        <button style="width: 250px" onclick="saveAnsAndFadeOut('diseaseTime','1月以上','userData'); printPostSave('postPtr')" class="btn btn-primary">
-                            1個月以上
-                        </button>
                     </div>
                 </div>
                 <div class="center-block" id="userData">
