@@ -10,14 +10,27 @@
    background-color: gray;
 }
 .btn-circle{
-   width: 100px;
-   height: 100px;
+   width: 120px;
+   height: 120px;
    text-align: center;
    padding: 6px 0;
-   font-size: 20px;
+   font-size: 25px;
    line-height: 1.42;
    border-radius: 200px;
 }
+
+@media all and (max-width: 820px){
+    #stepIntro{
+        width: 300px;
+    }
+    #boss{
+         width: 350px;
+    }
+    #hospital{
+        width: 350px;
+    }
+}
+
 .main{
    width: 100vw;
    max-width: 1220px;
