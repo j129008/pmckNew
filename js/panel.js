@@ -2,6 +2,7 @@ $(window).ready(
         function(){
             $(".panel-body").hide();
             $(".panel-footer").hide();
+            $('.panel-title').prepend('<span style="margin-right: 5px" class="caret"></span>');
         });
 
 $(".panel").click(
