@@ -235,21 +235,18 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAns('咳嗽')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('breath', '咳嗽','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             咳嗽
                         </button>
                         <br><br>
-                        <button onclick="saveAns('鼻水')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('breath', '鼻水','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             鼻水
                         </button>
                         <br><br>
-                        <button onclick="saveAns('氣喘')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('breath', '氣喘','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             氣喘
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('breath','userData')"class="btn btn-success">
-                            下一步
-                        </button>
                         </myBtn>
                     </div>
                 </div>
@@ -259,21 +256,18 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAns('扭傷')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('bone', '扭傷','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             扭傷
                         </button>
                         <br><br>
-                        <button onclick="saveAns('骨折')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('bone', '骨折','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             骨折
                         </button>
                         <br><br>
-                        <button onclick="saveAns('外傷')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('bone', '外傷','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             外傷
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('bone','userData')"class="btn btn-success">
-                            下一步
-                        </button>
                         </myBtn>
                     </div>
                 </div>
@@ -283,21 +277,18 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAns('甩耳')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('ear', '甩耳','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             甩耳
                         </button>
                         <br><br>
-                        <button onclick="saveAns('耳部流膿')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('ear', '耳部流膿','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             耳部流膿
                         </button>
                         <br><br>
-                        <button onclick="saveAns('抓耳朵')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('ear', '抓耳朵','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             抓耳朵
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('ear','userData')"class="btn btn-success">
-                            下一步
-                        </button>
                         </myBtn>
                     </div>
                 </div>
@@ -307,17 +298,14 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAns('血尿')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('pee', '血尿','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             血尿
                         </button>
                         <br><br>
-                        <button onclick="saveAns('排尿困難')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('pee', '排尿困難','userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             排尿困難
                         </button>
                         <br><br>
-                        <button onclick="nextQuestion('pee','userData')"class="btn btn-success">
-                            下一步
-                        </button>
                         </myBtn>
                     </div>
                 </div>
@@ -327,61 +315,12 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAnsAndFadeOut('belly','腹瀉','diarrhea')"class="btn btn-primary">
+                        <button onclick="saveAnsAndFadeOut('belly','腹瀉','userData')"class="btn btn-primary">
                             腹瀉
                         </button>
                         <br><br>
-                        <button onclick="saveAnsAndFadeOut('belly','嘔吐','vomit')"class="btn btn-primary">
+                        <button onclick="saveAnsAndFadeOut('belly','嘔吐','userData')"class="btn btn-primary">
                             嘔吐
-                        </button>
-                        <br><br>
-                        </myBtn>
-                    </div>
-                </div>
-                <div class="center-block" id="diarrhea">
-                    <div style="text-align: center;">
-                        <article>腹瀉</article>
-                    </div>
-                    <div class="text-center" style="padding-top: 20px">
-                        <myBtn>
-                        <button onclick="saveAns('血便')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            血便
-                        </button>
-                        <br><br>
-                        <button onclick="saveAns('下痢')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                            下痢
-                        </button>
-                        <br><br>
-                        <button onclick="nextQuestion('diarrhea','userData')"class="btn btn-success">
-                            下一步
-                        </button>
-                        </myBtn>
-                    </div>
-                </div>
-                <div class="center-block" id="vomit">
-                    <div style="text-align: center;">
-                        <article>嘔吐顏色</article>
-                    </div>
-                    <div class="text-center" style="padding-top: 20px">
-                        <myBtn>
-                        <button onclick="saveAnsAndFadeOut('vomit','黃色嘔吐','userData')"class="btn btn-primary">
-                            黃色
-                        </button>
-                        <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','紅色嘔吐','userData')"class="btn btn-primary">
-                            紅色
-                        </button>
-                        <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','咖啡色嘔吐','userData')"class="btn btn-primary">
-                            咖啡色
-                        </button>
-                        <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','白色嘔吐','userData')"class="btn btn-primary">
-                            白色
-                        </button>
-                        <br><br>
-                        <button onclick="saveAnsAndFadeOut('vomit','食物顏色嘔吐','userData')"class="btn btn-primary">
-                            食物顏色
                         </button>
                         <br><br>
                         </myBtn>
@@ -393,24 +332,20 @@
                     </div>
                     <div class="text-center" style="padding-top: 20px">
                         <myBtn>
-                        <button onclick="saveAns('疥癬蟲')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('skin', '疥癬蟲', 'userData')" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                             耳朵/脖子/手肘/肚子
                         </button>
                         <br><br>
-                        <button onclick="saveAns('毛囊蟲')"class="btn btn-primary"data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('skin', '毛囊蟲', 'userData')"class="btn btn-primary"data-toggle="button" aria-pressed="false" autocomplete="off">
                             眼眶/嘴角邊
                         </button>
                         <br><br>
-                        <button onclick="saveAns('跳蚤過敏症')"class="btn btn-primary"data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('skin', '跳蚤過敏症', 'userData')"class="btn btn-primary"data-toggle="button" aria-pressed="false" autocomplete="off">
                             背部/尾部
                         </button>
                         <br><br>
-                        <button onclick="saveAns('黴菌')"class="btn btn-primary"data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <button onclick="saveAnsAndFadeOut('skin', '黴菌', 'userData')"class="btn btn-primary"data-toggle="button" aria-pressed="false" autocomplete="off">
                             腳趾/分散性掉毛
-                        </button>
-                        <br><br>
-                        <button onclick="nextQuestion('skin','userData')"class="btn btn-success">
-                            下一步
                         </button>
                         <br><br>
                         </myBtn>
