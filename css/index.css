@@ -19,7 +19,7 @@
    border-radius: 200px;
 }
 
-@media all and (max-width: 820px){
+@media all and (max-width: 900px){
     #stepIntro{
         width: 300px;
     }
@@ -29,6 +29,37 @@
     #hospital{
         width: 350px;
     }
+    #home h1{
+        letter-spacing: 2px; 
+        font-size: 350%;
+    }
+    .home h3{
+        letter-spacing: 0.5px;
+        font-size: 150%;
+    }
+}
+
+.home{
+    height:100vh; 
+    min-height: 600px;
+    padding-top: 55px;
+}
+
+.home h1{
+    letter-spacing: 15px; 
+    color: white; 
+    font-size: 600%; 
+}
+
+.home h3{
+     letter-spacing: 5px;
+     color: white;
+     border-style: solid;
+     border-color: white;
+     border-width: thin;
+     padding-top: 5px;
+     padding-left: 5px;
+     padding-right: 5px;
 }
 
 .main{
