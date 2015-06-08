@@ -43,6 +43,7 @@
     height:100vh; 
     min-height: 600px;
     padding-top: 55px;
+    font-family: SimHei;
 }
 
 .home h1{
