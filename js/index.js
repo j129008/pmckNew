@@ -76,8 +76,8 @@ function post( myname, params) {
 }
 
 function printPostSave( id ){
-    if(ansList[0] != undefined){
-        $('#'+id).append('您的'+postSave['kind']+'具有'+ansList[0]+'等問題');
+    if(postSave['skin'] != undefined){
+        $('#'+id).append('您的'+postSave['kind']+'具有'+postSave['skin']+'等問題');
     }
 }
 
