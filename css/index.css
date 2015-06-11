@@ -130,6 +130,9 @@ article{
     text-align: center;
 }
 
+#ask button{
+     margin-top: 10px;
+}
 myBtn button{
      width: 250px;
 }
