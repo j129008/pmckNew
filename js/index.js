@@ -7,10 +7,15 @@ version    : 'v2.3'
 };
 
 function myScroll(id){
+    $t = $('#'+id);
+    if($t.is(':visible')==false){
+        $t.fadeIn();
+    }
+
     $('html,body').animate(
-            {scrollTop: $("#"+id).offset().top-50},
+            {scrollTop: $t.offset().top-50},
             'slow'
-            )
+            );
 }
 
 var ansList = [];
