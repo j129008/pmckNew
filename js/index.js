@@ -115,7 +115,7 @@ $(function(){
     addFormInput('姓名：', '姓名','[^A-Za-z0-9]+');
     addFormInput('手機：', '手機','(^09[0-9]{8}|^09[0-9]{2}-[0-9]{6})');
     addFormInput('信箱：', '信箱','.+@.+');
-    addFormInput('住址：', '住址','.+');
+    //addFormInput('住址：', '住址','.+');
     $("input").attr("required","");
     var btn = document.createElement("button");
     btn.setAttribute("class", "btn btn-primary");
