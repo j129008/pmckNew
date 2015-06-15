@@ -11,3 +11,6 @@ pmckImp
 .panel .panel-heading:hover{
     background-color: #BED7E4;
 }
+nav{
+    opacity: 0.8;
+}
