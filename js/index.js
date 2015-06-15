@@ -104,9 +104,26 @@ function addFormInput(formLabel, value, regex){
     visibilityField.setAttribute("class", "form-control");
     visibilityField.setAttribute("placeholder", value);
     visibilityField.setAttribute("pattern", regex);
+    visibilityField.setAttribute("required", "required");
 
     form.appendChild(formGroupDiv);
     formGroupDiv.appendChild(visibilityField);
+    document.getElementById("ans").appendChild(form);
+}
+function addCheckBox(label){
+    var t = document.createTextNode(label);
+    var formGroupDiv = document.createElement("div");
+    formGroupDiv.setAttribute("class","checkbox");
+    formGroupDiv.setAttribute("style","height: 50px;font-size: 18px;");
+
+    var visibilityField = document.createElement("input");
+    visibilityField.setAttribute("type", "checkbox");
+    visibilityField.setAttribute("name", label);
+    visibilityField.setAttribute("value", "yes");
+
+    form.appendChild(formGroupDiv);
+    formGroupDiv.appendChild(visibilityField);
+    formGroupDiv.appendChild(t);
     document.getElementById("ans").appendChild(form);
 }
 
@@ -116,7 +133,7 @@ $(function(){
     addFormInput('手機：', '手機','(^09[0-9]{8}|^09[0-9]{2}-[0-9]{6})');
     addFormInput('信箱：', '信箱','.+@.+');
     //addFormInput('住址：', '住址','.+');
-    $("input").attr("required","");
+    addCheckBox("其他醫院醫療效果不顯著");
     var btn = document.createElement("button");
     btn.setAttribute("class", "btn btn-primary");
     var t = document.createTextNode("聯絡我們");
