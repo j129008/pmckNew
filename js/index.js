@@ -133,7 +133,7 @@ $(function(){
     addFormInput('手機：', '手機','(^09[0-9]{8}|^09[0-9]{2}-[0-9]{6})');
     addFormInput('信箱：', '信箱','.+@.+');
     addFormInput('留言：', '留言','.+');
-    addCheckBox("其他醫院醫療效果不顯著");
+    addCheckBox("接受過治療但效果不彰");
     var btn = document.createElement("button");
     btn.setAttribute("class", "btn btn-primary");
     var t = document.createTextNode("聯絡我們");
