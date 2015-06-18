@@ -3382,6 +3382,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 	vertical-align: middle;
 	webkit-user-select: none;
 	white-space: nowrap;
+    box-shadow:4px 4px 5px rgba(20%,20%,40%,0.5);
 }
 .btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus
 {
