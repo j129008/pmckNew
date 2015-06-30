@@ -128,6 +128,9 @@ function addCheckBox(label){
     document.getElementById("ans").appendChild(form);
 }
 
+function getip(json){
+    post("ip",json.ip); // alerts the ip address
+}
 
 $(function(){
     addFormInput('姓名：', '姓名','[^A-Za-z0-9!@#$%^&\\*\\(\\)_+\\[\\]\\s\\.\\\\<>{},/?\\";\\\':-|~]+',4);
