@@ -139,6 +139,7 @@ $(function(){
     addFormInput('留言：', '病症問題','.+',1000);
     addCheckBox("是住在基隆地區的飼主");
     addCheckBox("接受過治療但效果不彰");
+    addCheckBox("願意提供分享諮詢過程");
     var btn = document.createElement("button");
     btn.setAttribute("class", "btn btn-primary");
     var t = document.createTextNode("聯絡我們");
