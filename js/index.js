@@ -14,7 +14,7 @@ function myScroll(id){
 
     $('html,body').animate(
             {scrollTop: $t.offset().top-50},
-            'slow'
+            1200
             );
 }
 
