@@ -126,7 +126,7 @@
         <div id="home" class="box home animatedParent">
             <div style="text-align: center;">
                 <h1 class="animated bounceInDown">中興動物醫院</h1>
-                <h3 class="animated bounceInRight">煩惱寵物生病嗎？問我們就對了！</h3>
+                <h3 class="animated rotateIn">煩惱寵物生病嗎？問我們就對了！</h3>
                 <button onclick="myScroll('ask')" style="margin-top:5vw" class="animated bounceInUp center-block btn btn-primary btn-lg btn-circle">問問題</button>
             </div>
         </div>
@@ -135,25 +135,14 @@
             <div id="askLink" style="position: relative; top: -50px;"></div>
             <div style="min-height: 480px; margin-bottom: 100px" class="container-fluid">
                 <div class="center-block" id="steps">
-                    <div class="visible-xs" style="display: block">
-                        <h3 style="text-align: center">上傳疾病症狀</h3>
-                        <img class="center-block" style="border: 0px none;" src="image/step2.png">
-                        <h4 style="text-align: center; margin-top: 20px">提供醫師初步諮詢之依據</h4>
-                    </div>
-                    <div class="hidden-xs" id="stepIntro" style="display: table; margin-left: auto; margin-right: auto;">
-                        <article>諮詢流程</article>
-                        <div style="padding-left: 0px; padding-right: 0px; display: inline-block; margin: 30px; vertical-align: top">
-                            <img style="border: 0px none;" src="image/step2.png">
-                            <h3 style="text-align: center">上傳疾病症狀</h3>
-                            <h4 style="text-align: center; margin-top: 20px">提供醫師初步諮詢之依據</h4>
-                        </div>
-                        <div style="padding-left: 0px; padding-right: 0px; display: inline-block; margin: 30px; vertical-align: top">
-                            <img style="border: 0px none;" src="image/step1.png">
-                            <h3 style="text-align: center">填寫聯絡方式</h3>
-                            <h4 style="text-align: center; margin-top: 20px">本院將盡速回報結果</h4>
+                    <div id="stepIntro" class="container-fluid" style="display: table; margin-left: auto; margin-right: auto;">
+                        <article>提供醫師寵物狀況</article>
+                        <div style="padding-left: 0px; padding-right: 0px; display: inline-block; vertical-align: top">
+                            <img class="img-responsive img-rounded" src="image/start.jpg">
                         </div>
                     </div>
                     <div class="text-center">
+                        <br>
                         <button id="start" data-loading-text="步驟準備中..." onclick="justNext('steps','kind');fadeOutID('boss');fadeOutID('hospital');" style="width:250px; height: 70px; font-size: 25px" class="btn btn-primary">立即開始</button>
                     </div>
                 </div>
