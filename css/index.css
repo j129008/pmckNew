@@ -20,9 +20,6 @@
 }
 
 @media all and (max-width: 900px){
-    #stepIntro{
-        width: 300px;
-    }
     #boss{
          width: 350px;
     }
