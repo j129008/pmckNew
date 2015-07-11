@@ -69,6 +69,14 @@ function fadeOutID( ID ){
      }
  );
 
+jQuery(document).ready(function ($) {
+    $("img.lazy").lazyload(
+        {
+            effect : "fadeIn"
+        }
+    );
+});
+
 var postSave = [];
 function post( myname, params) {
    var hiddenField = document.createElement("input");
