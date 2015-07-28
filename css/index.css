@@ -29,17 +29,23 @@
 .twoEle{
     min-height: 480px; 
     margin: 0px auto; 
-    max-width: 820px; 
+    max-width: 900px; 
     width: 90vw;
     margin-bottom: 5vw; 
 }
 
+#bossImg{
+     margin-top: 30px; 
+     display: inline-block;
+     vertical-align: top;
+}
+
 @media all and (max-width: 900px){
     #boss{
-         width: 350px;
+         max-width: 300px;
     }
     #hospital{
-        width: 350px;
+        max-width: 300px;
     }
     #home h1{
         letter-spacing: 2px; 
