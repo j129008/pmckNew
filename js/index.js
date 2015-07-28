@@ -75,6 +75,7 @@ jQuery(document).ready(function ($) {
             effect : "fadeIn"
         }
     );
+    $("#video").fitVids();
 });
 
 var postSave = [];
