@@ -38,6 +38,7 @@
      margin-top: 30px; 
      display: inline-block;
      vertical-align: top;
+     max-width:400px; min-width: 250px; width: 45vw
 }
 
 @media all and (max-width: 900px){
