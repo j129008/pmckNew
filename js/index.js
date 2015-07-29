@@ -70,11 +70,6 @@ function fadeOutID( ID ){
  );
 
 jQuery(document).ready(function ($) {
-    $("img.lazy").lazyload(
-        {
-            effect : "fadeIn"
-        }
-    );
     $("#video").fitVids();
 });
 
