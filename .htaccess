@@ -1,7 +1,7 @@
 <Files ~ "^\.(htaccess|htpasswd)$">
 deny from all
 </Files>
-ErrorDocument 404 http://pmck.com.tw/index.htm
+ErrorDocument 404 /404.htm
 order deny,allow
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
