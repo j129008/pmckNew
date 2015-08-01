@@ -4,13 +4,13 @@ deny from all
 RewriteEngine On
 
 RewriteCond %{REQUEST_URI} ^/404/$
-RewriteRule ^(.*)$ /index.htm [L,R=301]
+RewriteRule ^(.*)$ / [L,R=301]
 
 RewriteCond %{REQUEST_URI} ^/403/$
-RewriteRule ^(.*)$ /index.htm [L,R=301]
+RewriteRule ^(.*)$ / [L,R=301]
 
 RewriteCond %{REQUEST_URI} ^/500/$
-RewriteRule ^(.*)$ /index.htm [L,R=301]
+RewriteRule ^(.*)$ / [L,R=301]
 
 RewriteCond %{HTTP_HOST} !^www\.pmck\.com.tw$ [NC]
 RewriteRule ^(.*)$ http://www.pmck.com.tw/$1 [L,R=301]
