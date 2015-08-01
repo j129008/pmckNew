@@ -1,7 +1,26 @@
 <Files ~ "^\.(htaccess|htpasswd)$">
 deny from all
 </Files>
-ErrorDocument 404 /404.htm
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /index.htm [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/403/$
+RewriteRule ^(.*)$ /index.htm [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/500/$
+RewriteRule ^(.*)$ /index.htm [L,R=301]
+
+RewriteCond %{HTTP_HOST} !^www\.pmck\.com.tw$ [NC]
+RewriteRule ^(.*)$ http://www.pmck.com.tw/$1 [L,R=301]
+
+ErrorDocument 404 /404/
+ErrorDocument 403 /403/
+ErrorDocument 500 /500/
+
+
+
 order deny,allow
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
