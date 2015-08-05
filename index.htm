@@ -144,12 +144,15 @@ if (screen && screen.width > 480) {
             <div class="container-fluid">
                 <div class="center-block" id="steps" style="min-height:100vh">
                     <div id="stepIntro" class="container-fluid">
-                        <article>填寫寵物情況 & 問問題</article>
-                            <div id="video" class="center-block" style="max-width: 560px">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XO6VjaIpKPM" frameborder="0" allowfullscreen></iframe>
-                            </div>
+                        <article class="hidden-xs">填寫寵物情況 & 問問題</article>
+                        <div style="min-height:20vh" class="visible-xs">
+                            <article>填寫寵物情況 & </article> <article>問問題</article>
+                        </div>
+                        <div id="video" class="center-block" style="max-width: 560px; min-height: 33vh">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XO6VjaIpKPM" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div class="text-center">
+                    <div style="min-height:20vh" class="text-center">
                         <br>
                         <button id="start" data-loading-text="步驟準備中..." onclick="justNext('steps','kind');fadeOutID('boss');fadeOutID('hospital');" style="width:250px; height: 70px; font-size: 25px" class="btn btn-primary">立即開始</button>
                     </div>
