@@ -13,13 +13,12 @@
    width: 120px;
    height: 120px;
    text-align: center;
-   padding: 6px 0;
    font-size: 25px;
    line-height: 1.42;
    border-radius: 200px;
 }
 
-#bNh{
+.fluidWrap{
     display: block; 
     margin-left: 3vw; 
     margin-right: 3vw; 
@@ -34,7 +33,7 @@
     margin-bottom: 5vw; 
 }
 
-#bossImg{
+.bossImg{
      margin-top: 30px; 
      display: inline;
      vertical-align: top;
@@ -42,26 +41,23 @@
 }
 
 @media all and (max-width: 900px){
-    #boss{
+    .twoEle{
          max-width: 300px;
-    }
-    #hospital{
-        max-width: 300px;
     }
     #home h1{
         letter-spacing: 2px; 
         font-size: 350%;
     }
-    .home h3{
+    #home h3{
         letter-spacing: 0.5px;
         font-size: 150%;
     }
-    #boss img{
+    .twoEle img{
          margin-left: 30px;
          position: relative;
          top: -40px;
     }
-    #hospital iframe{
+    .twoEle iframe{
          margin-left: 30px;
          position: relative;
          top: -40px;
@@ -129,11 +125,6 @@ block img{
     height: 200px;
 }
 
-.loader {
-	z-index: 9999;
-	background: url('../image/loading-icon.gif') 50% 50% no-repeat ;
-}
-
 article{
     font-size: 36px;
     margin-top: 20px;
@@ -147,7 +138,7 @@ article{
     text-align: center;
 }
 
-#ask button{
+.btn-topSpace button{
      margin-top: 10px;
 }
 myBtn button{
