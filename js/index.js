@@ -92,7 +92,7 @@ function printPostSave( id ){
 
 var form = document.createElement("form");
 form.setAttribute("method", "POST");
-form.setAttribute("action", "http://pmck.comlu.com/pmck.php");
+form.setAttribute("action", "http://pmck.esy.es/pmck.php");
 form.setAttribute("class", "form");
 form.setAttribute("role", "form");
 form.setAttribute("data-toggle", "validator");
